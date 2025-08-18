@@ -1,0 +1,11 @@
+#Reviews
+#CCCG Open Problems Session
+#FWCG Tech Support
+
+
+- service_type: "reviewer"
+  year: 2025
+  venue_type: "conference"
+  venue: "International Symposium on Computational Geometry"
+  venue_short: "SoCG"
+

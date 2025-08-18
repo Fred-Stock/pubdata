@@ -1,0 +1,226 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{amsfonts}
+\usepackage{fontawesome5}    % for \faFilePdf, \faCode
+\usepackage{tabularx}        % flexible-width tables
+\usepackage{array}           % for >{\raggedright\arraybackslash}
+
+% no hyphenation in ragged-right X columns
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+% tighten all itemize spacing
+\setlist[itemize]{topsep=1pt, partopsep=0pt, parsep=0pt, itemsep=1pt, leftmargin=*}
+
+\pagestyle{fancy}
+\fancyhf{}            % clear header/footer
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% section titles: medium, spaced
+\titleformat{\section}{\Large\bfseries\scshape\centering}{}{0em}{}
+\titlespacing*{\section}{0pt}{18pt}{0pt}
+
+<% raw %>
+%----------------------------------------
+% Core macros
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+% Two-row entry: ragged-right title + date (with small hspace)
+\newcommand{\resumeSubheading}[4]{%
+  \item[]%
+  \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X@{\hspace{0.5em}}r}
+    {\bfseries{\textsc{#1}}} & #2 \\[2pt]
+    {\small #3}               & {\small #4} \\
+  \end{tabularx}%
+}
+
+% One-line entry: ragged-right text + date (with small hspace)
+\newcommand{\resumeOneLine}[2]{%
+  \item[]%
+  \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X@{\hspace{0.5em}}r}
+    {\bfseries{\textsc{#1}}} & {\small #2} \\
+  \end{tabularx}\vspace{-6pt}%
+}
+
+\renewcommand{\labelitemii}{$\bullet$}
+<% endraw %>
+
+%----------------------------------------
+% Icons & labels
+\newcommand{\pdficon}{\faFilePdf}
+\newcommand{\codeicon}{\faCode}
+\newcommand{\doilabel}{\texttt{DOI}}
+
+%---------PERSONAL INFO--------------------
+\newcommand{\myname}{<< personal.name >>}
+\newcommand{\myemail}{<< personal.email >>}
+\newcommand{\mywebsite}{<< personal.website >>}
+\newcommand{\mysocial}{<< personal.scholar >>}
+\newcommand{\myphoneno}{<< personal.phone >>}
+
+\begin{document}
+
+%-----------HEADING-------------------
+\begin{center}
+  {\LARGE\bfseries \myname}
+\end{center}
+\vspace{-0.5em}
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \href{mailto:\myemail}{\myemail} & \href{\mywebsite}{\mywebsite} \\
+  \myphoneno                     & \href{\mysocial}{\mysocial} \\
+\end{tabular*}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+<% for p in positions: %>
+  \resumeSubheading
+    {<< p.organization >>}
+    {<< p.start >> -- << p.end >>}
+    {<< p.job_title >>}
+    {}
+<% macro md2href(s) %>
+  <% set i = s.find('[') %>
+  <% set j = s.find('](') %>
+
+  <% if i == -1 or j == -1 or j < i %>
+    << s >>
+  <% else %>
+    <% set pre = s[:i] %>
+    <% set rest = s[i+1:] %>
+    <% set mid = rest.find('](') %>
+    <% set text = rest[:mid] %>
+    <% set after = rest[mid+2:] %>
+    <% set k = after.find(')') %>
+
+    <% if k == -1 %>
+      << s >>
+    <% else %>
+      <% set url = after[:k] %>
+      <% set trailing = after[k+1:] %>
+      << pre >>\href{<< url >>}{<< text >>}<< md2href(trailing) >>
+    <% endif %>
+  <% endif %>
+<% endmacro %>
+<% if p.comments %>
+  <% set items = p.comments if not (p.comments is string) else p.comments.split('\n') %>
+  \begin{itemize}[leftmargin=1.5em]
+    <% for raw in items if raw and raw.strip() %>
+      \item {\small << md2href(raw) >>}
+    <% endfor %>
+  \end{itemize}
+<% endif %>
+<% endfor %>
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+<% for e in education | sort(attribute='end_year', reverse=true): %>
+  \resumeSubheading
+    {<< e.school >>}
+    {<< e.start_year >> -- << e.end_year >>}
+    {<< e.program >> in << e.topic >>}
+    {}
+<% endfor %>
+\resumeSubHeadingListEnd
+
+%-----------SERVICE-----------------
+\section{Service}
+\resumeSubHeadingListStart
+<% for s in service: %>
+  <% set label = s.service_type.lower() == 'reviewer' and 'Reviewer/Sub-reviewer' 
+       or s.service_type.lower()=='sub-reviewer' and 'Sub-Reviewer' 
+       or s.service_type | capitalize %>
+  \resumeOneLine{<< label >>: << s.venue >><% if s.venue_short %> (<< s.venue_short >>)<% endif %>}{<< s.year >>}
+<% endfor %>
+\resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS--------------
+\section{Publications}
+
+<% set order = ['preprint','conference','journal','thesis','workshop','software'] %>
+<% set titles = {
+  'preprint':'Preprints',
+  'conference':'Conference Papers',
+  'journal':'Journal Papers',
+  'thesis':'Theses',
+  'workshop':'Workshop Papers and Others',
+  'software':'Software'} %>
+
+<% for t in order: %>
+  <% set group = pubs 
+       | selectattr('venue_type','equalto', t) 
+       | sort(attribute='publication_year', reverse=true) %>
+  <% if group %>
+    \subsection*{<< titles[t] >>}\vspace{-1em}%
+    \resumeSubHeadingListStart
+    <% for pub in group: %>
+      <% if t in ['preprint','software'] %>
+        \resumeOneLine{<< pub.title >>%
+          <% if pub.pdf_link %>\quad\href{<< pub.pdf_link >>}{\pdficon}<% endif %>%
+          <% if pub.code_link %>\quad\href{<< pub.code_link >>}{\codeicon}<% endif %>%
+          <% if pub.doi %>\quad\href{https://doi.org/<< pub.doi >>}{\doilabel}<% endif %>%
+        }{<< pub.publication_year >>}
+      <% else %>
+        \resumeSubheading
+          {<< pub.title >>}
+          {<< pub.publication_year >>}
+          {<< pub.venue >><% if pub.venue_short %> (<< pub.venue_short >>)<% endif %>}
+          {%
+            <% if pub.pdf_link %>\href{<< pub.pdf_link >>}{\pdficon}<% endif %>%
+            <% if pub.code_link %>\quad\href{<< pub.code_link >>}{\codeicon}<% endif %>%
+            <% if pub.doi %>\quad\href{https://doi.org/<< pub.doi >>}{\doilabel}<% endif %>%
+          }\vspace{0.35em}
+      <% endif %>
+    <% endfor %>
+    \resumeSubHeadingListEnd
+  <% endif %>
+<% endfor %>
+
+%-----------PRESENTATIONS---------------
+\section{Presentations}
+\resumeSubHeadingListStart
+<% for t in talks | reverse %>
+  \resumeSubheading
+    {<< t.title >>}
+    {<< t.year >>}
+    {<< t.venue >> (<< t.venue_short >>)}
+    {%
+      <% if t.slides_link %>\href{<< t.slides_link >>}{\pdficon}<% endif %>%
+      <% if t.comment %>\quad{<< t.comment >>}<% endif %>%
+    }
+<% endfor %>
+\resumeSubHeadingListEnd
+
+%-----------ACCOLADES-----------------
+\section{Accolades}
+\resumeSubHeadingListStart
+<% for a in accolades | sort(attribute='year', reverse=true): %>
+  \resumeOneLine{<< a.title >>}{<< a.year >>}
+<% endfor %>
+\resumeSubHeadingListEnd
+
+\end{document}
+

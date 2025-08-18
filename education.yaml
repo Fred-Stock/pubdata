@@ -1,0 +1,11 @@
+- school: "Rochester Institute of Technology"
+  program: "Bachelor of Science"
+  topic: "Applied Mathematics"
+  start_year: 2017
+  end_year: 2021
+
+- school: "University of Massachussets Lowell"
+  program: "Ph.D."
+  topic: "Computer Science"
+  start_year: 2022
+  end_year: "2027 (expected)"
