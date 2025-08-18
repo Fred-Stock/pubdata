@@ -1,0 +1,296 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{amsfonts}
+\usepackage{fontawesome5}    % for \faFilePdf, \faCode
+\usepackage{tabularx}        % flexible-width tables
+\usepackage{array}           % for >{\raggedright\arraybackslash}
+
+% no hyphenation in ragged-right X columns
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+% tighten all itemize spacing
+\setlist[itemize]{topsep=1pt, partopsep=0pt, parsep=0pt, itemsep=1pt, leftmargin=*}
+
+\pagestyle{fancy}
+\fancyhf{}            % clear header/footer
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% section titles: medium, spaced
+\titleformat{\section}{\Large\bfseries\scshape\centering}{}{0em}{}
+\titlespacing*{\section}{0pt}{18pt}{0pt}
+
+
+%----------------------------------------
+% Core macros
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+% Two-row entry: ragged-right title + date (with small hspace)
+\newcommand{\resumeSubheading}[4]{%
+  \item[]%
+  \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X@{\hspace{0.5em}}r}
+    {\bfseries{\textsc{#1}}} & #2 \\[2pt]
+    {\small #3}               & {\small #4} \\
+  \end{tabularx}%
+}
+
+% One-line entry: ragged-right text + date (with small hspace)
+\newcommand{\resumeOneLine}[2]{%
+  \item[]%
+  \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X@{\hspace{0.5em}}r}
+    {\bfseries{\textsc{#1}}} & {\small #2} \\
+  \end{tabularx}\vspace{-6pt}%
+}
+
+\renewcommand{\labelitemii}{$\bullet$}
+
+%----------------------------------------
+% Icons & labels
+\newcommand{\pdficon}{\faFilePdf}
+\newcommand{\codeicon}{\faCode}
+\newcommand{\doilabel}{\texttt{DOI}}
+
+%---------PERSONAL INFO--------------------
+\newcommand{\myname}{Frederick Stock}
+\newcommand{\myemail}{frederick\_stock@student.uml.edu}
+\newcommand{\mywebsite}{tba}
+\newcommand{\mysocial}{https://scholar.google.com/citations?user=VzJruXwAAAAJ}
+\newcommand{\myphoneno}{+1-860-759-5072}
+
+\begin{document}
+
+%-----------HEADING-------------------
+\begin{center}
+  {\LARGE\bfseries \myname}
+\end{center}
+\vspace{-0.5em}
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \href{mailto:\myemail}{\myemail} & \href{\mywebsite}{\mywebsite} \\
+  \myphoneno                     & \href{\mysocial}{\mysocial} \\
+\end{tabular*}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {University of Massachussets Lowell}
+    {Fall 2023 -- Spring 2024}
+    {Teaching Assistant}
+    {}
+  \begin{itemize}[leftmargin=1.5em]
+      \item {\small 
+    Three sections
+}
+      \item {\small 
+    Recitation, Office hours, Grading, Managing graders
+}
+  \end{itemize}
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {University of Massachussets Lowell}
+    {2022 -- 2026}
+    {Ph.D. in Computer Science}
+    {}
+  \resumeSubheading
+    {Rochester Institute of Technology}
+    {2017 -- 2021}
+    {Bachelor of Science in Applied Mathematics}
+    {}
+\resumeSubHeadingListEnd
+
+%-----------SERVICE-----------------
+\section{Service}
+\resumeSubHeadingListStart
+  \resumeOneLine{Reviewer/Sub-reviewer: International Symposium on Computational Geometry (SoCG)}{2025}
+\resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS--------------
+\section{Publications}
+
+
+    \subsection*{Preprints}\vspace{-1em}%
+    \resumeSubHeadingListStart
+        \resumeOneLine{Reconfiguration of 3D Pivoting Modular Robots%
+\quad\href{https://arxiv.org/pdf/2304.09990}{\pdficon}%
+%
+\quad\href{https://doi.org/10.48550/arXiv.2304.09990}{\doilabel}%
+        }{2023}
+    \resumeSubHeadingListEnd
+    \subsection*{Conference Papers}\vspace{-1em}%
+    \resumeSubHeadingListStart
+        \resumeSubheading
+          {Input-Sensitive Reconfiguration of Sliding Cubes}
+          {2025}
+          {The Canadian Conference on Computational Geometry (CCCG)}
+          {%
+\href{https://arxiv.org/pdf/2507.04170}{\pdficon}%
+%
+%
+          }\vspace{0.35em}
+        \resumeSubheading
+          {Quasigeodesics on the Cube}
+          {2025}
+          {The Canadian Conference on Computational Geometry (CCCG)}
+          {%
+\href{https://arxiv.org/pdf/2503.10376}{\pdficon}%
+%
+%
+          }\vspace{0.35em}
+        \resumeSubheading
+          {On Inside-out Dissections of Polygons and Polyhedra}
+          {2025}
+          {The Canadian Conference on Computational Geometry (CCCG)}
+          {%
+\href{https://arxiv.org/pdf/2411.06584}{\pdficon}%
+%
+\quad\href{https://doi.org/10.48550/arXiv.2411.06584}{\doilabel}%
+          }\vspace{0.35em}
+        \resumeSubheading
+          {Brief Announcement: Broadcast via Mobile Agents in a Dynamic Network: Interplay of Graph Properties \& Agents}
+          {2025}
+          {4th Symposium on Algorithmic Foundations of Dynamic Networks (SAND)}
+          {%
+\href{https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SAND.2025.17}{\pdficon}%
+%
+\quad\href{https://doi.org/10.4230/LIPIcs.SAND.2025.17}{\doilabel}%
+          }\vspace{0.35em}
+        \resumeSubheading
+          {Finding Shortest Reconfiguration Sequences for Modular Robots}
+          {2025}
+          {41st International Symposium on Computational Geometry Media Exposition (SoCG:ME 2025)}
+          {%
+\href{https://drops.dagstuhl.de/storage/00lipics/lipics-vol332-socg2025/LIPIcs.SoCG.2025.85/LIPIcs.SoCG.2025.85.pdf}{\pdficon}%
+\quad\href{https://github.com/Modular-Robotics-Group/modular-robotics}{\codeicon}%
+\quad\href{https://doi.org/10.4230/LIPIcs.SoCG.2025.85}{\doilabel}%
+          }\vspace{0.35em}
+        \resumeSubheading
+          {Navigation in dynamic graphs: How to defeat the Acme Graph Exploder}
+          {2025}
+          {2025 Spring Eastern Sectional Meeting of the American Mathematical Society (AMS Spring 2025)}
+          {%
+%
+%
+%
+          }\vspace{0.35em}
+        \resumeSubheading
+          {Minimum Plane Bichromatic Spanning Trees}
+          {2024}
+          {35th International Symposium on Algorithms and Computation (ISAAC)}
+          {%
+\href{https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ISAAC.2024.4}{\pdficon}%
+%
+\quad\href{https://doi.org/10.4230/LIPIcs.ISAAC.2024.4}{\doilabel}%
+          }\vspace{0.35em}
+        \resumeSubheading
+          {Easier Ways to Prove Counting Hard: A Dichotomy for Generalized \#SAT, Applied to Constraint Graphs}
+          {2024}
+          {35th International Symposium on Algorithms and Computation (ISAAC)}
+          {%
+\href{https://drops.dagstuhl.de/storage/00lipics/lipics-vol322-isaac2024/LIPIcs.ISAAC.2024.51/LIPIcs.ISAAC.2024.51.pdf}{\pdficon}%
+%
+\quad\href{https://doi.org/10.4230/LIPIcs.ISAAC.2024.51}{\doilabel}%
+          }\vspace{0.35em}
+        \resumeSubheading
+          {Agent Motion Planning as Block Asynchronous Cellular Automata: Pushing, Pulling, Suplexing, and More}
+          {2024}
+          {21st International Conference on Unconventional Computation and Natural Computation (UCNC)}
+          {%
+\href{https://link.springer.com/chapter/10.1007/978-3-031-63742-1_16}{\pdficon}%
+%
+\quad\href{https://doi.org/10.1007/978-3-031-63742-1_16}{\doilabel}%
+          }\vspace{0.35em}
+        \resumeSubheading
+          {A Universal In-Place Reconfiguration Algorithm for Sliding Cube-Shaped Robots in a Quadratic Number of Moves}
+          {2024}
+          {40th International Symposium on Computational Geometry (SoCG)}
+          {%
+\href{https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SoCG.2024.1}{\pdficon}%
+%
+\quad\href{https://doi.org/10.4230/LIPIcs.SoCG.2024.1}{\doilabel}%
+          }\vspace{0.35em}
+        \resumeSubheading
+          {Super Guarding and Dark Rays in Art Galleries}
+          {2023}
+          {The Canadian Conference on Computational Geometry (CCCG)}
+          {%
+\href{https://arxiv.org/pdf/2404.04613}{\pdficon}%
+%
+%
+          }\vspace{0.35em}
+        \resumeSubheading
+          {Blockchain Ensured Physical Visitor Access Control and Authentication}
+          {2022}
+          {IEEE International Conference on Mobile Ad Hoc and Smart Systems, REUNS (REUNS)}
+          {%
+\href{https://par.nsf.gov/servlets/purl/10376999}{\pdficon}%
+%
+%
+          }\vspace{0.35em}
+    \resumeSubHeadingListEnd
+    \subsection*{Journal Papers}\vspace{-1em}%
+    \resumeSubHeadingListStart
+        \resumeSubheading
+          {Minimum Plane Bichromatic Spanning Trees}
+          {2025}
+          {ACM Transactions on Algorithms (Transactions on Algorithms)}
+          {%
+\href{https://dl.acm.org/doi/pdf/10.1145/3747591}{\pdficon}%
+%
+\quad\href{https://doi.org/10.1145/3747591}{\doilabel}%
+          }\vspace{0.35em}
+        \resumeSubheading
+          {Physical Visitor Access Control and Authentication Using Blockchain, Smart Contracts and Internet of Things}
+          {2022}
+          {Cryptography (MDPI), Special Issue on Emerging Topics in Blockchain Security and Privacy (Cryptography)}
+          {%
+\href{https://www.mdpi.com/2410-387X/6/4/65}{\pdficon}%
+%
+\quad\href{https://doi.org/10.3390/cryptography6040065}{\doilabel}%
+          }\vspace{0.35em}
+    \resumeSubHeadingListEnd
+
+%-----------PRESENTATIONS---------------
+\section{Presentations}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {}
+    {2020}
+    { ()}
+    {%
+\href{tba/docstore/talks/slides.pdf}{\pdficon}%
+%
+    }
+\resumeSubHeadingListEnd
+
+%-----------ACCOLADES-----------------
+\section{Accolades}
+\resumeSubHeadingListStart
+  \resumeOneLine{Magnum Cum Laude}{2021}
+\resumeSubHeadingListEnd
+
+\end{document}

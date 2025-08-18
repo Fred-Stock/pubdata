@@ -3,23 +3,364 @@
 # Grab From Google Scholar
 # Don't Forget about the GD and ESA publications
 
-- title: ""
-  short_title: ""
+####################################################### 2025 ###############################################################
+
+- title: "Input-Sensitive Reconfiguration of Sliding Cubes"
+  short_title: "Input-Sensitive Sliding Cubes"
   authors:
-    - W
-    - E
-    - J
-    - A
+    - Hugo Akitaya
+    - Matias Korman
+    - Frederick Stock
   other_authors:
-    - W
-    - E
-    - A
-  publication_year: 2020
-  venue_type: ""
-  venue: ""
-  venue_short: ""
+    - Hugo Akitaya
+    - Matias Korman
+  publication_year: 2025
+  venue_type: "conference"
+  venue: "The Canadian Conference on Computational Geometry"
+  venue_short: "CCCG"
   code_link: null
-  pdf_link: ""
+  pdf_link: "https://arxiv.org/pdf/2507.04170"
   doi: null
+
+- title: "Quasigeodesics on the Cube"
+  short_title: "Quasigeodesics on the Cube"
+  authors:
+    - MIT CompGeom Group
+    - Hugo A. Akitaya
+    - Erik D. Demaine
+    - Adam Hesterberg
+    - Thomas C. Hull
+    - Anna Lubiw
+    - Jayson Lynch
+    - Klara Mundilova
+    - Chie Nara
+    - Joseph O'Rourke
+    - Frederick Stock
+    - Josef Tkadlec
+    - Ryuhei Uehara
+  other_authors:
+    - MIT CompGeom Group
+    - Hugo A. Akitaya
+    - Erik D. Demaine
+    - Adam Hesterberg
+    - Thomas C. Hull
+    - Anna Lubiw
+    - Jayson Lynch
+    - Klara Mundilova
+    - Chie Nara
+    - Joseph O'Rourke
+    - Josef Tkadlec
+    - Ryuhei Uehara
+  publication_year: 2025
+  venue_type: "conference"
+  venue: "The Canadian Conference on Computational Geometry"
+  venue_short: "CCCG"
+  code_link: null
+  pdf_link: "https://arxiv.org/pdf/2503.10376"
+  doi: null
+
+- title: "On Inside-out Dissections of Polygons and Polyhedra"
+  short_title: "Inside-out Dissections of Polygons and Polyhedra"
+  authors:
+    - Reymond Akpanya
+    - Adi Rivkin
+    - Frederick Stock
+  other_authors:
+    - Reymond Akpanya
+    - Adi Rivkin
+  publication_year: 2025
+  venue_type: "conference"
+  venue: "The Canadian Conference on Computational Geometry"
+  venue_short: "CCCG"
+  code_link: null
+  pdf_link: "https://arxiv.org/pdf/2411.06584"
+  doi: "10.48550/arXiv.2411.06584"
+
+- title: "Minimum Plane Bichromatic Spanning Trees"
+  short_title: "Minimum Plane Bichromatic Spanning Trees"
+  authors:
+    - Hugo Akitaya
+    - Ahmad Biniaz
+    - Erik Demaine
+    - Linda Kleist
+    - Frederick Stock
+    - Csaba D. Tóth
+  other_authors:
+    - Hugo Akitaya
+    - Ahmad Biniaz
+    - Erik Demaine
+    - Linda Kleist
+    - Csaba D. Tóth
+  publication_year: 2025
+  venue_type: "journal"
+  venue: "ACM Transactions on Algorithms"
+  venue_short: "Transactions on Algorithms"
+  code_link: null
+  pdf_link: "https://dl.acm.org/doi/pdf/10.1145/3747591"
+  doi: "10.1145/3747591"
+
+- title: "Brief Announcement: Broadcast via Mobile Agents in a Dynamic Network: Interplay of Graph Properties \\& Agents"
+  short_title: "Broadcast via Mobile Agents in Dynamic Network"
+  authors:
+    - William K. Moses Jr.
+    - Amanda Redlich
+    - Frederick Stock
+  other_authors:
+    - William K. Moses Jr.
+    - Amanda Redlich
+  publication_year: 2025
+  venue_type: "conference"
+  venue: "4th Symposium on Algorithmic Foundations of Dynamic Networks"
+  venue_short: "SAND"
+  code_link: null
+  pdf_link: "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SAND.2025.17"
+  doi: "10.4230/LIPIcs.SAND.2025.17"
+
+- title: "Finding Shortest Reconfiguration Sequences for Modular Robots"
+  short_title: "Shortest Reconfiguration Sequences for Modular Robots"
+  authors:
+    - UML Modular Robotics Group
+    - Hugo A. Akitaya
+    - Andrew Clements
+    - Sam Downey
+    - Jonathan Eisenbies
+    - Soham Samanta
+    - Gabriel Shahrouzi
+    - Frederick Stock
+  other_authors:
+    - UML Modular Robotics Group
+    - Hugo A. Akitaya
+    - Andrew Clements
+    - Sam Downey
+    - Jonathan Eisenbies
+    - Soham Samanta
+    - Gabriel Shahrouzi
+  publication_year: 2025
+  venue_type: "conference"
+  venue: "41st International Symposium on Computational Geometry Media Exposition"
+  venue_short: "SoCG:ME 2025"
+  code_link: "https://github.com/Modular-Robotics-Group/modular-robotics"
+  pdf_link: "https://drops.dagstuhl.de/storage/00lipics/lipics-vol332-socg2025/LIPIcs.SoCG.2025.85/LIPIcs.SoCG.2025.85.pdf"
+  doi: "10.4230/LIPIcs.SoCG.2025.85"
+
+- title: "Navigation in dynamic graphs: How to defeat the Acme Graph Exploder"
+  short_title: "Navigation in dynamic graphs"
+  authors:
+    - Amanda Epping Redlich
+    - William K Moses Jr.
+    - Frederick Stock
+  other_authors:
+    - Amanda Epping Redlich
+    - William K Moses Jr.
+  publication_year: 2025
+  venue_type: "conference"
+  venue: "2025 Spring Eastern Sectional Meeting of the American Mathematical Society"
+  venue_short: "AMS Spring 2025"
+  code_link: null
+  pdf_link: null
+  doi: null
+
+####################################################### 2024 ###############################################################
+
+- title: "Minimum Plane Bichromatic Spanning Trees"
+  short_title: "MinPBST"
+  authors:
+    - Hugo A. Akitaya
+    - Ahmad Biniaz
+    - Erik D. Demaine
+    - Linda Kleist
+    - Frederick Stock
+    - Csaba D. Tóth
+  other_authors:
+    - Hugo A. Akitaya
+    - Ahmad Biniaz
+    - Erik D. Demaine
+    - Linda Kleist
+    - Csaba D. Tóth
+  publication_year: 2024
+  venue_type: "conference"
+  venue: "35th International Symposium on Algorithms and Computation"
+  venue_short: "ISAAC"
+  code_link: null
+  pdf_link: "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ISAAC.2024.4"
+  doi: "10.4230/LIPIcs.ISAAC.2024.4"
+
+- title: "Easier Ways to Prove Counting Hard: A Dichotomy for Generalized \\#SAT, Applied to Constraint Graphs"
+  short_title: "Dichotomy for Generalized #SAT"
+  authors:
+    - MIT Hardness Group
+    - Josh Brunner
+    - Erik D. Demaine
+    - Jenny Diomidova
+    - Timothy Gomez
+    - Markus Hecher
+    - Frederick Stock
+    - Zixiang Zhou
+  other_authors:
+    - MIT Hardness Group
+    - Josh Brunner
+    - Erik D. Demaine
+    - Jenny Diomidova
+    - Timothy Gomez
+    - Markus Hecher
+    - Zixiang Zhou
+  publication_year: 2024
+  venue_type: "conference"
+  venue: "35th International Symposium on Algorithms and Computation"
+  venue_short: "ISAAC"
+  code_link: null
+  pdf_link: "https://drops.dagstuhl.de/storage/00lipics/lipics-vol322-isaac2024/LIPIcs.ISAAC.2024.51/LIPIcs.ISAAC.2024.51.pdf"
+  doi: "10.4230/LIPIcs.ISAAC.2024.51"
+
+- title: "Agent Motion Planning as Block Asynchronous Cellular Automata: Pushing, Pulling, Suplexing, and More"
+  short_title: "Block Pushing as Asynchronous Cellular Automata"
+  authors:
+    - MIT Hardness Group
+    - Hayashi Ani
+    - Josh Brunner
+    - Erik D. Demaine
+    - Jenny Diomidova
+    - Timothy Gomez
+    - Della Hendrickson
+    - Yael Kirkpatrick
+    - Jeffery Li
+    - Jayson Lynch
+    - Ritam Nag
+    - Frederick Stock
+  other_authors:
+    - MIT Hardness Group
+    - Hayashi Ani
+    - Josh Brunner
+    - Erik D. Demaine
+    - Jenny Diomidova
+    - Timothy Gomez
+    - Della Hendrickson
+    - Yael Kirkpatrick
+    - Jeffery Li
+    - Jayson Lynch
+    - Ritam Nag
+  publication_year: 2024
+  venue_type: "conference"
+  venue: "21st International Conference on Unconventional Computation and Natural Computation"
+  venue_short: "UCNC"
+  code_link: null
+  pdf_link: "https://link.springer.com/chapter/10.1007/978-3-031-63742-1_16"
+  doi: "10.1007/978-3-031-63742-1_16"
+
+- title: "A Universal In-Place Reconfiguration Algorithm for Sliding Cube-Shaped Robots in a Quadratic Number of Moves"
+  short_title: "Universal In-Place Reconfiguration"
+  authors:
+    - Zachary Abel
+    - Hugo A. Akitaya
+    - Scott Duke Kominers
+    - Matias Korman
+    - Frederick Stock
+  other_authors:
+    - Zachary Abel
+    - Hugo A. Akitaya
+    - Scott Duke Kominers
+    - Matias Korman
+  publication_year: 2024
+  venue_type: "conference"
+  venue: "40th International Symposium on Computational Geometry"
+  venue_short: "SoCG"
+  code_link: null
+  pdf_link: "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SoCG.2024.1"
+  doi: "10.4230/LIPIcs.SoCG.2024.1"
+####################################################### 2023 ###############################################################
+
+
+- title: "Super Guarding and Dark Rays in Art Galleries"
+  short_title: "Super Guarding and Dark Rays"
+  authors:
+    - MIT CompGeom Group
+    - Hugo A. Akitaya
+    - Erik D. Demaine
+    - Adam Hesterberg
+    - Anna Lubiw
+    - Jayson Lynch
+    - Joseph O'Rourke
+    - Frederick Stock
+  other_authors:
+    - MIT CompGeom Group
+    - Hugo A. Akitaya
+    - Erik D. Demaine
+    - Adam Hesterberg
+    - Anna Lubiw
+    - Jayson Lynch
+    - Joseph O'Rourke
+  publication_year: 2023
+  venue_type: "conference"
+  venue: "The Canadian Conference on Computational Geometry"
+  venue_short: "CCCG"
+  code_link: null
+  pdf_link: "https://arxiv.org/pdf/2404.04613"
+  doi: null
+
+################################# REPLACE WITH YRF STUFF
+- title: "Reconfiguration of 3D Pivoting Modular Robots"
+  short_title: "3D Pivoting Modular Robots"
+  authors:
+    - Hugo A. Akitaya
+    - Frederick Stock
+  other_authors: 
+    - Hugo A. Akitaya
+  publication_year: 2023
+  venue_type: "preprint"
+  venue: "Socg"
+  venue_short: "arXiv"
+  code_link: null
+  pdf_link: "https://arxiv.org/pdf/2304.09990"
+  doi: "10.48550/arXiv.2304.09990"
+################################
+
+####################################################### 2022 ###############################################################
+
+- title: "Blockchain Ensured Physical Visitor Access Control and Authentication"
+  short_title: "Blockchain Phyical Access Control"
+  authors:
+    - Frederick Stock
+    - Jarel Hearst
+    - Yessem Kurt Peker
+  other_authors:
+    - Jarel Hearst
+    - Yessem Kurt Peker
+  publication_year: 2022
+  venue_type: "conference"
+  venue: "IEEE International Conference on Mobile Ad Hoc and Smart Systems, REUNS"
+  venue_short: "REUNS"
+  code_link: null
+  pdf_link: "https://par.nsf.gov/servlets/purl/10376999"
+  doi: null
+
+- title: "Physical Visitor Access Control and Authentication Using Blockchain, Smart Contracts and Internet of Things"
+  short_title: "Blockchain Physical Access Control IoT"
+  authors:
+    - Frederick Stock
+    - Yesem Kurt Peker
+    - Alfredo J. Perez
+    - Jarel Hearst
+  other_authors:
+    - Yesem Kurt Peker
+    - Alfredo J. Perez
+    - Jarel Hearst
+  publication_year: 2022
+  venue_type: "journal"
+  venue: "Cryptography (MDPI), Special Issue on Emerging Topics in Blockchain Security and Privacy"
+  venue_short: "Cryptography"
+  code_link: null
+  pdf_link: "https://www.mdpi.com/2410-387X/6/4/65"
+  doi: "10.3390/cryptography6040065"
+
+
+############################################################################################################
+
+
+
+
+
+
+
+
 
 

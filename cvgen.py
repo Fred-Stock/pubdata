@@ -13,11 +13,11 @@ def load_yaml(fn):
 
 if __name__ == '__main__':
     personal = {
-        'name': 'Jack Spalding-Jamieson',
-        'email': 'jacksj@uwaterloo.ca',
-        'phone': '+1-250-878-9930',
-        'website': 'https://jacksj.com',
-        'scholar': 'https://scholar.google.com/citations?user=GKhnWJMAAAAJ'
+        'name': 'Frederick Stock',
+        'email': 'frederick\\_stock@student.uml.edu',
+        'phone': '+1-860-759-5072',
+        'website': 'tba',
+        'scholar': 'https://scholar.google.com/citations?user=VzJruXwAAAAJ'
     }
 
     data = {

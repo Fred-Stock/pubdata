@@ -3,7 +3,7 @@ from collections import defaultdict
 
 def normalize_link(link):
     if link and link.startswith("docstore:"):
-        return "https://jacksj.com/docstore/" + link[len("docstore:"):]
+        return "https://fred-stock.com/docstore/" + link[len("docstore:"):]
     return link
 
 # Load the YAML files
