@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1755793238.43137 "c:/Users/freddy/Documents/GitHub/Fred-Stock.github.io/pubdata/template/cv_template.tex" "cv_template.pdf" "cv_template" 1755793239.00151 2
-  "c:/Users/freddy/Documents/GitHub/Fred-Stock.github.io/pubdata/template/cv_template.tex" 1755793236 9289 e6123d758bfc2f6c054c6f6f4f2a7df4 ""
+["pdflatex"] 1755891776.41669 "c:/Users/freddy/Documents/GitHub/Fred-Stock.github.io/pubdata/template/cv_template.tex" "cv_template.pdf" "cv_template" 1755891776.9677 2
+  "c:/Users/freddy/Documents/GitHub/Fred-Stock.github.io/pubdata/template/cv_template.tex" 1755891774 9294 7a98e302475c03a1774aabd31d64a4dd ""
   "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1755554380 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm" 1755554045 1536 02c06700a42be0f5a28664c7273f82e7 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1755552944 1004 54797486969f23fa377b128694d548df ""
@@ -78,8 +78,8 @@
   "c:/texlive/2025/texmf-dist/web2c/texmf.cnf" 1755552841 42213 4e2ca030e8e2640502016e9e45868dcb ""
   "c:/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1755557895 3605806 004a7c84fc2eabc6cb8104ed2eefc05b ""
   "c:/texlive/2025/texmf.cnf" 1755557683 713 e69b156964470283e0530f5060668171 ""
-  "cv_template.aux" 1755793238 138 dfd98a311dd1033c83c001c747190af7 "pdflatex"
-  "cv_template.tex" 1755793236 9289 e6123d758bfc2f6c054c6f6f4f2a7df4 ""
+  "cv_template.aux" 1755891776 138 dfd98a311dd1033c83c001c747190af7 "pdflatex"
+  "cv_template.tex" 1755891774 9294 7a98e302475c03a1774aabd31d64a4dd ""
   (generated)
   "cv_template.aux"
   "cv_template.log"

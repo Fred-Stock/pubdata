@@ -3,7 +3,7 @@ from collections import defaultdict
 
 def normalize_link(link):
     if link and link.startswith("docstore:"):
-        return "https://fred-stock.com/docstore/" + link[len("docstore:"):]
+        return "https://github.com/Fred-Stock/docstore/blob/main/" + link[len("docstore:"):]
     return link
 
 # Load the YAML files
@@ -27,22 +27,23 @@ for talk in talks:
         talk['venue_short'] = talk.get('venue', '')
 
 # Define the self-author
-self_author = "Frederick Stokc"
+self_author = "Frederick Stock"
 self_author_modified = "Freddy"
 
 # Personal information for the header
-email = "frederick <underscore> stock <at> student.uml.edu "
-#subtitle = "Researcher and Software Engineer in Computational Geometry"
-subtitle = "Researcher and Software Engineer"
-bio = ("I am a researcher and software engineer "
-       "and low-level distributed robotics graph-compute systems.")
+email = "frederick_stock [at] student.uml.edu "
+subtitle = "Ph.D. Student in Computational Geometry"
+bio = ("I am a Ph.D. student at the University of Massachussetts Lowell, in Lowell Mass. I have an expected graduation date of May 2026. "
+        "My interests lie in Algorithms and Computational geometry, with a focus on Reconfiguration algorithms. "
+        "<b>I am actively soliciting job offers for after my graduation.</b> "
+        "Open to significant relocation. ")
 
 # Define the order of venue types
 venue_order = ["upcoming", "journal",  "conference", "other", "preprint",  "thesis", "workshop", "software"]
 venue_type_title = {
   "upcoming":"Upcoming Publications",
   "preprint":"Preprints",
-  "conference":"Conference Papers",
+  "conference":"Conference Proceedings",
   "other":"Other Publications",
   "journal":"Journal Papers",
   "thesis":"Theses",
@@ -62,17 +63,35 @@ for pub in publications:
 sorted_venue_types = [v for v in venue_order if v in organized_pubs]
 for venue_type in organized_pubs:
     if not venue_type == "upcoming":
-        print("not upcomming")
         organized_pubs[venue_type] = dict(sorted(organized_pubs[venue_type].items(), reverse=True))
-    else: 
-        print("here")
+
+pub_type_totals = ""
+total_pubs = 0
+type_totals = {}
+for venue_type in sorted_venue_types:
+    type_total = 0
+    for year in organized_pubs[venue_type].keys():
+        type_total += len(organized_pubs[venue_type][year])
+
+    total_pubs += type_total
+
+    type_totals[venue_type] = type_total
+    # pub_type_totals += venue_type + ": " + str(total_type) + " | "
+
+pub_type_totals = pub_type_totals[:-3] # remove trailing " | "
+
+
 
 # Generate HTML for publications
 def generate_pub_html(pub):
     authors = ', '.join([f"<b>{self_author_modified}</b>" if author == self_author else author for author in pub['authors']])
     if "venue" in pub.keys():
         venue = f'<abbr title="{pub["venue"]}">{pub["venue_short"]}</abbr>'
-        venue_span = f"<span class=\"pub-venue\">{venue}, {pub['publication_year']}</span>"
+        venue_span = ""
+        if(pub['publication_year'] == None):
+            venue_span = f"<span class=\"pub-venue\">{venue}</span>"
+        else:
+            venue_span = f"<span class=\"pub-venue\">{venue}, {pub['publication_year']}</span>"
     else:
         venue = ""
         #venue_span = ""
@@ -84,15 +103,25 @@ def generate_pub_html(pub):
 
     links = ""
     pdf_link = normalize_link(pub.get('pdf_link'))
+    web_link = normalize_link(pub.get('web_link'))
     code_link = normalize_link(pub.get('code_link'))
     if pdf_link:
         links += f'<span class="icon-wrapper"><a href="{pdf_link}" target="_blank"><img src="pdf_icon.png" alt="PDF" width="16"></a></span>'
+    if web_link:
+        links += f'<span class="icon-wrapper"><a href="{web_link}" target="_blank"><img src="world-wide-web.png" alt="Web" width="16"></a></span>'
     if code_link:
         links += f' <span class="icon-wrapper"><a href="{code_link}" target="_blank"><img src="code_icon.png" alt="Code" width="16"></a></span>'
 
-    # Determine the main link for the clickable box
-    main_link = pdf_link if pdf_link else code_link
 
+    # Determine the main link for the clickable box, with priority web_link > pdf_link > code_link
+    main_link = None
+    if code_link:
+        main_link = code_link
+    if pdf_link:
+        main_link = pdf_link
+    if web_link:
+        main_link = web_link
+    
     if main_link:
         return f"""
         <li class="roundbox clickable-pub">
@@ -100,7 +129,7 @@ def generate_pub_html(pub):
             <div class="pub-entry">
                 <div class="pub-header">
                     <div class="pub-links">{links}</div>
-                    <span class="pub-title">{pub['short_title']}</span>
+                    <span class="pub-title">{pub['title']}</span>
                 </div>
                 <span class="pub-authors">{authors}</span><br>
                 {venue_span}
@@ -114,7 +143,7 @@ def generate_pub_html(pub):
             <div class="pub-entry">
                 <div class="pub-header">
                     <div class="pub-links">{links}</div>
-                    <span class="pub-title">{pub['short_title']}</span>
+                    <span class="pub-title">{pub['title']}</span>
                 </div>
                 <span class="pub-authors">{authors}</span><br>
                 {venue_span}
@@ -149,7 +178,7 @@ def generate_talk_html(talk):
 # Generate Publications Section HTML
 pubs_html = ""
 for venue_type in sorted_venue_types:
-    pubs_html += f"<h4>{venue_type_title[venue_type]}</h4><ul>"
+    pubs_html += f"<h4>{venue_type_title[venue_type]} (Total: {type_totals[venue_type]})</h4><ul>"
     for year in organized_pubs[venue_type]:
         for pub in organized_pubs[venue_type][year]:
             pubs_html += generate_pub_html(pub)
@@ -302,7 +331,7 @@ html_template = f"""
 
         <!-- Works Section -->
         <div id="content">
-            <h3><b>Works</b></h3>
+            <h3><b>Works</b> (Total: {total_pubs})</h3>
             {pubs_html}
         </div>
 
