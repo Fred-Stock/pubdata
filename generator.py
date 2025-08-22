@@ -61,7 +61,8 @@ for pub in publications:
 # Sort venue types and years
 sorted_venue_types = [v for v in venue_order if v in organized_pubs]
 for venue_type in organized_pubs:
-    organized_pubs[venue_type] = dict(sorted(organized_pubs[venue_type].items(), reverse=True))
+    if not venue_type == "upcoming":
+        organized_pubs[venue_type] = dict(sorted(organized_pubs[venue_type].items(), reverse=True))
 
 # Generate HTML for publications
 def generate_pub_html(pub):
