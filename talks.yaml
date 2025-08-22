@@ -1,10 +1,10 @@
-- title: ""
-  short_title: ""
-  slides_link: "docstore:talks/slides.pdf"
-  venue_type: ""
-  venue: ""
-  venue_short: ""
-  year: 2020
+# - title: ""
+#   short_title: ""
+#   slides_link: "docstore:talks/slides.pdf"
+#   venue_type: ""
+#   venue: ""
+#   venue_short: ""
+#   year: 2020
 
 #REUNS 2022 (Poster)
 #YRF 2023
@@ -16,3 +16,76 @@
 #SOCG:ME 2025
 #CCCG 2025
 #CCCG 2025
+
+- title: "Input-Sensitive Reconfiguration of Sliding Cubes"
+  short_title: "Input-Sensitive Sliding Cubes"
+  slides_link: "docstore:talks/slides.pdf"
+  venue_type: "conference"
+  venue: "The Canadian Conference on Computational Geometry"
+  venue_short: "CCCG"
+  year: 2025
+
+- title: "On Inside-out Dissections of Polygons and Polyhedra"
+  short_title: "Inside-out Dissections of Polygons and Polyhedra"
+  slides_link: "docstore:talks/slides.pdf"
+  venue_type: "conference"
+  venue: "The Canadian Conference on Computational Geometry"
+  venue_short: "CCCG"
+  year: 2025
+
+- title: "Finding Shortest Reconfiguration Sequences for Modular Robots"
+  short_title: "Shortest Reconfiguration Sequences for Modular Robots"
+  slides_link: "docstore:talks/slides.pdf"
+  venue_type: "conference"
+  venue: "41st International Symposium on Computational Geometry Media Exposition"
+  venue_short: "SoCG:ME"
+  year: 2025
+
+- title: "Minimum Plane Bichromatic Spanning Trees"
+  short_title: "MinPBST"
+  slides_link: "docstore:talks/slides.pdf"
+  venue_type: "conference"
+  venue: "35th International Symposium on Algorithms and Computation"
+  venue_short: "ISAAC"
+  year: 2024
+
+- title: "Easier Ways to Prove Counting Hard: A Dichotomy for Generalized \\#SAT, Applied to Constraint Graphs"
+  short_title: "Dichotomy for Generalized #SAT"
+  slides_link: "docstore:talks/slides.pdf"
+  venue_type: "conference"
+  venue: "35th International Symposium on Algorithms and Computation"
+  venue_short: "ISAAC"
+  year: 2024
+
+- title: "A Universal In-Place Reconfiguration Algorithm for Sliding Cube-Shaped Robots in a Quadratic Number of Moves"
+  short_title: "Universal In-Place Reconfiguration"
+  slides_link: "docstore:talks/slides.pdf"
+  venue_type: "conference"
+  venue: "40th International Symposium on Computational Geometry"
+  venue_short: "SoCG"
+  year: 2024
+
+- title: "Super Guarding and Dark Rays in Art Galleries"
+  short_title: "Super Guarding and Dark Rays"
+  slides_link: "docstore:talks/slides.pdf"
+  venue_type: "conference"
+  venue: "The Canadian Conference on Computational Geometry"
+  venue_short: "CCCG"
+  year: 2023
+
+- title: "Reconfiguration of 3D Pivoting Modular Robots"
+  short_title: "3D Pivoting Modular Robots"
+  slides_link: "docstore:talks/slides.pdf"
+  venue_type: "conference"
+  venue: "SoCG Young Researchers Forum"
+  venue_short: "SoCG:YRF"
+  year: 2023
+
+- title: "Blockchain Ensured Physical Visitor Access Control and Authentication"
+  short_title: "Blockchain Phyical Access Control"
+  slides_link: "docstore:talks/slides.pdf"
+  venue_type: "conference"
+  venue: "IEEE International Conference on Mobile Ad Hoc and Smart Systems, REUNS"
+  venue_short: "REUNS"
+  year: 2022
+

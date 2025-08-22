@@ -3,15 +3,95 @@
 # Grab From Google Scholar
 # Don't Forget about the GD and ESA publications
 
+# EuroCG Paper - Domes over Polygons
+##################################################### Upcoming #############################################################
+
+- title: "Super Guarding and Dark Rays in Art Galleries"
+  short_title: "Super Guarding and Dark Rays"
+  authors:
+    - MIT CompGeom Group
+    - Hugo A. Akitaya
+    - Erik D. Demaine
+    - Adam Hesterberg
+    - Anna Lubiw
+    - Jayson Lynch
+    - Joseph O'Rourke
+  publication_year: 2025
+  venue_type: "upcoming"
+  venue: "Discrete Mathematics \\& Theoretical Computer Science"
+  venue_short: "DMTCS"
+  code_link: null
+  pdf_link: null
+  doi: null
+
+- title: "A Universal In-Place Reconfiguration Algorithm for Sliding Cube-Shaped Robots in a Quadratic Number of Moves"
+  short_title: "Universal In-Place Reconfiguration"
+  authors:
+    - Zachary Abel
+    - Hugo A. Akitaya
+    - Scott Duke Kominers
+    - Matias Korman
+  publication_year: 2025
+  venue_type: "upcoming"
+  venue: "The Journal of Computational Geometry"
+  venue_short: "JoCG"
+  code_link: null
+  pdf_link: null
+  doi: null
+
+- title: "Connectivity Augmentation for Planar Graphs and Beyond-Planar Graphs"
+  short_title: "Planar Connectivity Augmentation"
+  authors:
+    - Hugo Akitaya
+    - Justin Dallant
+    - Erik Demaine
+    - Michael Kaufmann
+    - Linda Kleist
+    - Csaba D. Tóth
+    - Torsten Ueckerdt
+  publication_year: 2025
+  venue_type: "upcoming"
+  venue: "The 33rd International Symposium on Graph Drawing and Network Visualization"
+  venue_short: GD
+  code_link: null
+  pdf_link: null
+  doi: null
+
+- title: "Sliding Squares in Parallel"
+  short_title: "Sliding Squares in Parallel"
+  authors:
+    - Hugo Akitaya
+    - Sándor Fekete
+    - Peter Kramer
+    - Saba Molaei
+    - Christian Rieck
+    - Tobias Wallner
+  publication_year: 2025
+  venue_type: "upcoming"
+  venue: "The European Symposium on Algorithms"
+  venue_short: ESA
+  code_link: null
+  pdf_link: null
+  doi: null
+
+
 ####################################################### 2025 ###############################################################
+
+- title: "Open Problems from CCCG 2025"
+  short_title: "CCCG Open Problems 2025"
+  authors:
+    - Hugo Akitaya
+  publication_year: 2025
+  venue_type: "other"
+  venue: "The Canadian Conference on Computational Geoemtry"
+  venue_short: CCCG
+  code_link: null
+  pdf_link: null
+  doi: null
 
 - title: "Input-Sensitive Reconfiguration of Sliding Cubes"
   short_title: "Input-Sensitive Sliding Cubes"
   authors:
-    - Hugo Akitaya
-    - Matias Korman
-    - Frederick Stock
-  other_authors:
     - Hugo Akitaya
     - Matias Korman
   publication_year: 2025
@@ -25,20 +105,6 @@
 - title: "Quasigeodesics on the Cube"
   short_title: "Quasigeodesics on the Cube"
   authors:
-    - MIT CompGeom Group
-    - Hugo A. Akitaya
-    - Erik D. Demaine
-    - Adam Hesterberg
-    - Thomas C. Hull
-    - Anna Lubiw
-    - Jayson Lynch
-    - Klara Mundilova
-    - Chie Nara
-    - Joseph O'Rourke
-    - Frederick Stock
-    - Josef Tkadlec
-    - Ryuhei Uehara
-  other_authors:
     - MIT CompGeom Group
     - Hugo A. Akitaya
     - Erik D. Demaine
@@ -64,10 +130,6 @@
   authors:
     - Reymond Akpanya
     - Adi Rivkin
-    - Frederick Stock
-  other_authors:
-    - Reymond Akpanya
-    - Adi Rivkin
   publication_year: 2025
   venue_type: "conference"
   venue: "The Canadian Conference on Computational Geometry"
@@ -79,13 +141,6 @@
 - title: "Minimum Plane Bichromatic Spanning Trees"
   short_title: "Minimum Plane Bichromatic Spanning Trees"
   authors:
-    - Hugo Akitaya
-    - Ahmad Biniaz
-    - Erik Demaine
-    - Linda Kleist
-    - Frederick Stock
-    - Csaba D. Tóth
-  other_authors:
     - Hugo Akitaya
     - Ahmad Biniaz
     - Erik Demaine
@@ -102,10 +157,6 @@
 - title: "Brief Announcement: Broadcast via Mobile Agents in a Dynamic Network: Interplay of Graph Properties \\& Agents"
   short_title: "Broadcast via Mobile Agents in Dynamic Network"
   authors:
-    - William K. Moses Jr.
-    - Amanda Redlich
-    - Frederick Stock
-  other_authors:
     - William K. Moses Jr.
     - Amanda Redlich
   publication_year: 2025
@@ -126,15 +177,6 @@
     - Jonathan Eisenbies
     - Soham Samanta
     - Gabriel Shahrouzi
-    - Frederick Stock
-  other_authors:
-    - UML Modular Robotics Group
-    - Hugo A. Akitaya
-    - Andrew Clements
-    - Sam Downey
-    - Jonathan Eisenbies
-    - Soham Samanta
-    - Gabriel Shahrouzi
   publication_year: 2025
   venue_type: "conference"
   venue: "41st International Symposium on Computational Geometry Media Exposition"
@@ -148,10 +190,6 @@
   authors:
     - Amanda Epping Redlich
     - William K Moses Jr.
-    - Frederick Stock
-  other_authors:
-    - Amanda Epping Redlich
-    - William K Moses Jr.
   publication_year: 2025
   venue_type: "conference"
   venue: "2025 Spring Eastern Sectional Meeting of the American Mathematical Society"
@@ -160,18 +198,43 @@
   pdf_link: null
   doi: null
 
+- title: "Hardness Table Layout Hardness Table"
+  short_title: "Hardness Table Layout"
+  authors:
+    - MIT Hardness Group
+    - Josh Brunner
+    - Andy Tockman
+    - Della Hendrickson
+    - Hayashi Layers
+    - Timothy Gomez
+    - Erik D. Demaine
+    - Jenny Diomidova
+  publication_year: 2025
+  venue_type: "other"
+  venue: "SIGTBD"
+  venue_short: null
+  code_link: null
+  pdf_link: null
+  doi: null
+
 ####################################################### 2024 ###############################################################
+
+- title: "Open Problems from CCCG 2024"
+  short_title: "CCCG Open Problems 2024"
+  authors:
+    - Reymond Akpanya
+    - Bastien Rivier
+  publication_year: 2024
+  venue_type: "other"
+  venue: "The Canadian Conference on Computational Geoemtry"
+  venue_short: CCCG
+  code_link: null
+  pdf_link: null
+  doi: null
 
 - title: "Minimum Plane Bichromatic Spanning Trees"
   short_title: "MinPBST"
   authors:
-    - Hugo A. Akitaya
-    - Ahmad Biniaz
-    - Erik D. Demaine
-    - Linda Kleist
-    - Frederick Stock
-    - Csaba D. Tóth
-  other_authors:
     - Hugo A. Akitaya
     - Ahmad Biniaz
     - Erik D. Demaine
@@ -188,15 +251,6 @@
 - title: "Easier Ways to Prove Counting Hard: A Dichotomy for Generalized \\#SAT, Applied to Constraint Graphs"
   short_title: "Dichotomy for Generalized #SAT"
   authors:
-    - MIT Hardness Group
-    - Josh Brunner
-    - Erik D. Demaine
-    - Jenny Diomidova
-    - Timothy Gomez
-    - Markus Hecher
-    - Frederick Stock
-    - Zixiang Zhou
-  other_authors:
     - MIT Hardness Group
     - Josh Brunner
     - Erik D. Demaine
@@ -226,19 +280,6 @@
     - Jeffery Li
     - Jayson Lynch
     - Ritam Nag
-    - Frederick Stock
-  other_authors:
-    - MIT Hardness Group
-    - Hayashi Ani
-    - Josh Brunner
-    - Erik D. Demaine
-    - Jenny Diomidova
-    - Timothy Gomez
-    - Della Hendrickson
-    - Yael Kirkpatrick
-    - Jeffery Li
-    - Jayson Lynch
-    - Ritam Nag
   publication_year: 2024
   venue_type: "conference"
   venue: "21st International Conference on Unconventional Computation and Natural Computation"
@@ -250,12 +291,6 @@
 - title: "A Universal In-Place Reconfiguration Algorithm for Sliding Cube-Shaped Robots in a Quadratic Number of Moves"
   short_title: "Universal In-Place Reconfiguration"
   authors:
-    - Zachary Abel
-    - Hugo A. Akitaya
-    - Scott Duke Kominers
-    - Matias Korman
-    - Frederick Stock
-  other_authors:
     - Zachary Abel
     - Hugo A. Akitaya
     - Scott Duke Kominers
@@ -280,15 +315,6 @@
     - Anna Lubiw
     - Jayson Lynch
     - Joseph O'Rourke
-    - Frederick Stock
-  other_authors:
-    - MIT CompGeom Group
-    - Hugo A. Akitaya
-    - Erik D. Demaine
-    - Adam Hesterberg
-    - Anna Lubiw
-    - Jayson Lynch
-    - Joseph O'Rourke
   publication_year: 2023
   venue_type: "conference"
   venue: "The Canadian Conference on Computational Geometry"
@@ -301,9 +327,6 @@
 - title: "Reconfiguration of 3D Pivoting Modular Robots"
   short_title: "3D Pivoting Modular Robots"
   authors:
-    - Hugo A. Akitaya
-    - Frederick Stock
-  other_authors: 
     - Hugo A. Akitaya
   publication_year: 2023
   venue_type: "preprint"
@@ -319,16 +342,12 @@
 - title: "Blockchain Ensured Physical Visitor Access Control and Authentication"
   short_title: "Blockchain Phyical Access Control"
   authors:
-    - Frederick Stock
-    - Jarel Hearst
-    - Yessem Kurt Peker
-  other_authors:
     - Jarel Hearst
     - Yessem Kurt Peker
   publication_year: 2022
   venue_type: "conference"
   venue: "IEEE International Conference on Mobile Ad Hoc and Smart Systems, REUNS"
-  venue_short: "REUNS"
+  venue_short: "IEEE MASS REUNS"
   code_link: null
   pdf_link: "https://par.nsf.gov/servlets/purl/10376999"
   doi: null
@@ -336,11 +355,6 @@
 - title: "Physical Visitor Access Control and Authentication Using Blockchain, Smart Contracts and Internet of Things"
   short_title: "Blockchain Physical Access Control IoT"
   authors:
-    - Frederick Stock
-    - Yesem Kurt Peker
-    - Alfredo J. Perez
-    - Jarel Hearst
-  other_authors:
     - Yesem Kurt Peker
     - Alfredo J. Perez
     - Jarel Hearst

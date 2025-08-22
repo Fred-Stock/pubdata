@@ -55,12 +55,58 @@
   \end{tabularx}%
 }
 
+\newcommand{\publication}[6]{
+  % \item[#6] \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X@{\hspace{0.5em}}r}
+  %   {\bfseries{\textsc{#1}}} & #2 \\[2pt]
+  %   {\small #3}               & {\small #4} \\
+  %   {\small #5} &\\ 
+  % \end{tabularx}%
+  \item ``#1'' %
+   (Joint work with#2), %
+     \emph{#3}, %
+      #4% 
+% \item[#6] %\vtop{%
+%   \begin{tabular}{@{}p{0.85\textwidth}@{\hspace{0.5em}}r@{}}
+%     {\bfseries\textsc{#1}} & #2 \\[2pt]
+%     {\small #3}            & {\small #4} \\
+%     {\small #5}            & \\
+%   \end{tabular}%
+%}
+
+
+}
+
+\newcommand{\soloPublication}[3]{
+  \item ``#1'', \emph{#2}, #3
+}
+
+\newcommand{\presentation}[3]{
+  % \item[#6] \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X@{\hspace{0.5em}}r}
+  %   {\bfseries{\textsc{#1}}} & #2 \\[2pt]
+  %   {\small #3}               & {\small #4} \\
+  %   {\small #5} &\\ 
+  % \end{tabularx}%
+  \item ``#1'' %
+     \emph{#2}, %
+      #3% 
+% \item[#6] %\vtop{%
+%   \begin{tabular}{@{}p{0.85\textwidth}@{\hspace{0.5em}}r@{}}
+%     {\bfseries\textsc{#1}} & #2 \\[2pt]
+%     {\small #3}            & {\small #4} \\
+%     {\small #5}            & \\
+%   \end{tabular}%
+%}
+
+
+}
+
 % One-line entry: ragged-right text + date (with small hspace)
 \newcommand{\resumeOneLine}[2]{%
-  \item[]%
-  \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X@{\hspace{0.5em}}r}
-    {\bfseries{\textsc{#1}}} & {\small #2} \\
-  \end{tabularx}\vspace{-6pt}%
+  \item[] #1 #2
+  % \item[]%
+  % \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X@{\hspace{0.5em}}r}
+  %   {\small \bfseries{\textsc{#1}}} & {\small #2} \\
+  % \end{tabularx}\vspace{-6pt}%
 }
 
 \renewcommand{\labelitemii}{$\bullet$}
@@ -152,31 +198,45 @@
 <% for s in service: %>
   <% set label = s.service_type.lower() == 'reviewer' and 'Reviewer/Sub-reviewer' 
        or s.service_type.lower()=='sub-reviewer' and 'Sub-Reviewer' 
-       or s.service_type | capitalize %>
-  \resumeOneLine{<< label >>: << s.venue >><% if s.venue_short %> (<< s.venue_short >>)<% endif %>}{<< s.year >>}
+       or s.service_type %>
+  \resumeOneLine{<< label >>: << s.venue >><% if s.venue_short %> (<< s.venue_short >>)<% endif %>}{
+  <%for year in s.year%><< year >><% if not loop.last%>,<% endif %> <%endfor%> 
+  }
 <% endfor %>
 \resumeSubHeadingListEnd
 
 %-----------PUBLICATIONS--------------
 \section{Publications}
 
-<% set order = ['preprint','conference','journal','thesis','workshop','software'] %>
+<% set order = ['upcoming','journal','conference','other','preprint','thesis','workshop','software'] %>
 <% set titles = {
+  'upcoming':'Upcoming Publications',
   'preprint':'Preprints',
   'conference':'Conference Papers',
+  'other':'Other Publications',
   'journal':'Journal Papers',
   'thesis':'Theses',
   'workshop':'Workshop Papers and Others',
   'software':'Software'} %>
 
+\newcounter{pubnum}
 <% for t in order: %>
-  <% set group = pubs 
-       | selectattr('venue_type','equalto', t) 
-       | sort(attribute='publication_year', reverse=true) %>
+  <% if not t == 'upcoming' %>
+    <% set group = pubs 
+        | selectattr('venue_type','equalto', t) 
+        | sort(attribute='publication_year', reverse=true) %>
+  <%else%>
+    <% set group = pubs 
+        | selectattr('venue_type','equalto', t) %>
+  <%endif%>
   <% if group %>
-    \subsection*{<< titles[t] >>}\vspace{-1em}%
-    \resumeSubHeadingListStart
+    \subsection*{<< titles[t] >>}%
+    % \resumeSubHeadingListStart
+  
+    \begin{enumerate}
+    \setcounter{enumi}{\value{pubnum}}
     <% for pub in group: %>
+      
       <% if t in ['preprint','software'] %>
         \resumeOneLine{<< pub.title >>%
           <% if pub.pdf_link %>\quad\href{<< pub.pdf_link >>}{\pdficon}<% endif %>%
@@ -184,35 +244,48 @@
           <% if pub.doi %>\quad\href{https://doi.org/<< pub.doi >>}{\doilabel}<% endif %>%
         }{<< pub.publication_year >>}
       <% else %>
-        \resumeSubheading
+        \publication
           {<< pub.title >>}
-          {<< pub.publication_year >>}
+          {
+            <% for author in pub.authors%>
+            <%if loop.last and not loop.first%> \&<%endif%> <<author>><% if not loop.last and not loop.index == pub.authors|length - 1%>,<% endif %>
+            <% endfor -%>
+          }
           {<< pub.venue >><% if pub.venue_short %> (<< pub.venue_short >>)<% endif %>}
+          {<< pub.publication_year >>}
           {%
             <% if pub.pdf_link %>\href{<< pub.pdf_link >>}{\pdficon}<% endif %>%
             <% if pub.code_link %>\quad\href{<< pub.code_link >>}{\codeicon}<% endif %>%
             <% if pub.doi %>\quad\href{https://doi.org/<< pub.doi >>}{\doilabel}<% endif %>%
-          }\vspace{0.35em}
+          }
+          {<<loop.index>>}
       <% endif %>
+    <%if not loop.last%> \vspace{-.5em} <%endif%> 
     <% endfor %>
-    \resumeSubHeadingListEnd
+    \setcounter{pubnum}{\value{enumi}}
+    \end{enumerate}
+    % \resumeSubHeadingListEnd
   <% endif %>
 <% endfor %>
 
 %-----------PRESENTATIONS---------------
 \section{Presentations}
-\resumeSubHeadingListStart
-<% for t in talks | reverse %>
-  \resumeSubheading
-    {<< t.title >>}
-    {<< t.year >>}
-    {<< t.venue >> (<< t.venue_short >>)}
-    {%
-      <% if t.slides_link %>\href{<< t.slides_link >>}{\pdficon}<% endif %>%
-      <% if t.comment %>\quad{<< t.comment >>}<% endif %>%
-    }
+% \resumeSubHeadingListStart
+\begin{enumerate}
+<% for t in talks %>
+  \presentation{<<t.title>>}{<<t.venue>>}{<<t.year>>}<%if not loop.last%> \vspace{-.5em} <%endif%> 
+  % \resumeSubheading
+  %   {<< t.title >>}
+  %   {<< t.year >>}
+  %   {<< t.venue >> (<< t.venue_short >>)}
+  %   {%
+  %     <% if t.slides_link %>\href{<< t.slides_link >>}{\pdficon}<% endif %>%
+  %     <% if t.comment %>\quad{<< t.comment >>}<% endif %>%
+  %   }
+  %   {}
 <% endfor %>
-\resumeSubHeadingListEnd
+\end{enumerate}
+% \resumeSubHeadingListEnd
 
 %-----------ACCOLADES-----------------
 \section{Accolades}

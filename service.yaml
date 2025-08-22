@@ -1,11 +1,73 @@
 #Reviews
 #CCCG Open Problems Session
 #FWCG Tech Support
+# - service_type: "Recording Open Problems"
+#   year: 2025
+#   venue_type: "conference"
+#   venue: "The Canadian Conference on Computational Geoemtry"
+#   venue_short: "CCCG"
 
+# - service_type: "Recording Open Problems"
+#   year: 2024
+#   venue_type: "conference"
+#   venue: "The Canadian Conference on Computational Geoemtry"
+#   venue_short: "CCCG"
 
-- service_type: "reviewer"
-  year: 2025
+- service_type: "Technical and Adminstrative Support"
+  year: 
+    - 2024
+  venue_type: "workshop"
+  venue: "Fall Workshop on Computational Geometry"
+  venue_short: "FWCG"
+
+########################### Reviews
+
+- service_type: "sub-reviewer"
+  year: 
+    - 2025
+  venue_type: "conference"
+  venue: "International Symposium on Distributed Computing"
+  venue_short: "DISC"
+
+- service_type: "sub-reviewer"
+  year: 
+    - 2025
+    - 2024
   venue_type: "conference"
   venue: "International Symposium on Computational Geometry"
   venue_short: "SoCG"
 
+- service_type: "sub-reviewer"
+  year: 
+    - 2025
+  venue_type: "journal"
+  venue: "Journal on Computational Geometry"
+  venue_short: "JoCG"
+
+- service_type: "sub-reviewer"
+  year: 
+    - 2024
+  venue_type: "conference"
+  venue: "The Canadian Conference on Computational Geoemtry"
+  venue_short: "CCCG"
+
+# - service_type: "sub-reviewer"
+#   year: 
+#     - 2024
+#   venue_type: "conference"
+#   venue: "International Symposium on Computational Geoemtry"
+#   venue_short: "SoCG"
+
+- service_type: "sub-reviewer"
+  year: 
+    - 2024
+  venue_type: "conference"
+  venue: "International Symposium on Algorithms and Computation"
+  venue_short: "ISAAC"
+
+- service_type: "sub-reviewer"
+  year: 
+    - 2024
+  venue_type: "journal"
+  venue: "Journal of Information Processing (JCDCGGG Special Issue) "
+  venue_short: "JIP"

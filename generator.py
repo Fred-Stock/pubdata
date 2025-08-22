@@ -38,15 +38,18 @@ bio = ("I am a researcher and software engineer "
        "and low-level distributed robotics graph-compute systems.")
 
 # Define the order of venue types
-venue_order = ["preprint", "conference", "journal", "thesis", "workshop", "software"]
+venue_order = ["upcoming", "journal",  "conference", "other", "preprint",  "thesis", "workshop", "software"]
 venue_type_title = {
-    "preprint": "Preprints",
-    "workshop": "Workshop Papers and Others",
-    "conference": "Conference Papers",
-    "journal": "Journal Papers",
-    "thesis": "Theses",
-    "software": "Software",
+  "upcoming":"Upcoming Publications",
+  "preprint":"Preprints",
+  "conference":"Conference Papers",
+  "other":"Other Publications",
+  "journal":"Journal Papers",
+  "thesis":"Theses",
+  "workshop":"Workshop Papers and Others",
+  "software":"Software",
 }
+
 
 # Organize publications by venue type and year
 organized_pubs = defaultdict(lambda: defaultdict(list))

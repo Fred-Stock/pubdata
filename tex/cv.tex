@@ -55,12 +55,58 @@
   \end{tabularx}%
 }
 
+\newcommand{\publication}[6]{
+  % \item[#6] \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X@{\hspace{0.5em}}r}
+  %   {\bfseries{\textsc{#1}}} & #2 \\[2pt]
+  %   {\small #3}               & {\small #4} \\
+  %   {\small #5} &\\ 
+  % \end{tabularx}%
+  \item ``#1'' %
+   (Joint work with#2), %
+     \emph{#3}, %
+      #4% 
+% \item[#6] %\vtop{%
+%   \begin{tabular}{@{}p{0.85\textwidth}@{\hspace{0.5em}}r@{}}
+%     {\bfseries\textsc{#1}} & #2 \\[2pt]
+%     {\small #3}            & {\small #4} \\
+%     {\small #5}            & \\
+%   \end{tabular}%
+%}
+
+
+}
+
+\newcommand{\soloPublication}[3]{
+  \item ``#1'', \emph{#2}, #3
+}
+
+\newcommand{\presentation}[3]{
+  % \item[#6] \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X@{\hspace{0.5em}}r}
+  %   {\bfseries{\textsc{#1}}} & #2 \\[2pt]
+  %   {\small #3}               & {\small #4} \\
+  %   {\small #5} &\\ 
+  % \end{tabularx}%
+  \item ``#1'' %
+     \emph{#2}, %
+      #3% 
+% \item[#6] %\vtop{%
+%   \begin{tabular}{@{}p{0.85\textwidth}@{\hspace{0.5em}}r@{}}
+%     {\bfseries\textsc{#1}} & #2 \\[2pt]
+%     {\small #3}            & {\small #4} \\
+%     {\small #5}            & \\
+%   \end{tabular}%
+%}
+
+
+}
+
 % One-line entry: ragged-right text + date (with small hspace)
 \newcommand{\resumeOneLine}[2]{%
-  \item[]%
-  \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X@{\hspace{0.5em}}r}
-    {\bfseries{\textsc{#1}}} & {\small #2} \\
-  \end{tabularx}\vspace{-6pt}%
+  \item[] #1 #2
+  % \item[]%
+  % \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X@{\hspace{0.5em}}r}
+  %   {\small \bfseries{\textsc{#1}}} & {\small #2} \\
+  % \end{tabularx}\vspace{-6pt}%
 }
 
 \renewcommand{\labelitemii}{$\bullet$}
@@ -126,166 +172,472 @@
 %-----------SERVICE-----------------
 \section{Service}
 \resumeSubHeadingListStart
-  \resumeOneLine{Reviewer/Sub-reviewer: International Symposium on Computational Geometry (SoCG)}{2025}
+  \resumeOneLine{Technical and Adminstrative Support: Fall Workshop on Computational Geometry (FWCG)}{
+2024  
+  }
+  \resumeOneLine{Sub-Reviewer: International Symposium on Distributed Computing (DISC)}{
+2025  
+  }
+  \resumeOneLine{Sub-Reviewer: International Symposium on Computational Geometry (SoCG)}{
+2025, 2024  
+  }
+  \resumeOneLine{Sub-Reviewer: Journal on Computational Geometry (JoCG)}{
+2025  
+  }
+  \resumeOneLine{Sub-Reviewer: The Canadian Conference on Computational Geoemtry (CCCG)}{
+2024  
+  }
+  \resumeOneLine{Sub-Reviewer: International Symposium on Algorithms and Computation (ISAAC)}{
+2024  
+  }
+  \resumeOneLine{Sub-Reviewer: Journal of Information Processing (JCDCGGG Special Issue)  (JIP)}{
+2024  
+  }
 \resumeSubHeadingListEnd
 
 %-----------PUBLICATIONS--------------
 \section{Publications}
 
 
-    \subsection*{Preprints}\vspace{-1em}%
-    \resumeSubHeadingListStart
+\newcounter{pubnum}
+    \subsection*{Upcoming Publications}%
+    % \resumeSubHeadingListStart
+  
+    \begin{enumerate}
+    \setcounter{enumi}{\value{pubnum}}
+      
+        \publication
+          {Super Guarding and Dark Rays in Art Galleries}
+          {
+ MIT CompGeom Group, Hugo A. Akitaya, Erik D. Demaine, Adam Hesterberg, Anna Lubiw, Jayson Lynch \& Joseph O'Rourke}
+          {Discrete Mathematics \& Theoretical Computer Science (DMTCS)}
+          {None}
+          {%
+%
+%
+%
+          }
+          {1}
+ \vspace{-.5em}  
+      
+        \publication
+          {A Universal In-Place Reconfiguration Algorithm for Sliding Cube-Shaped Robots in a Quadratic Number of Moves}
+          {
+ Zachary Abel, Hugo A. Akitaya, Scott Duke Kominers \& Matias Korman}
+          {The Journal of Computational Geometry (JoCG)}
+          {None}
+          {%
+%
+%
+%
+          }
+          {2}
+ \vspace{-.5em}  
+      
+        \publication
+          {Connectivity Augmentation for Planar Graphs and Beyond-Planar Graphs}
+          {
+ Hugo Akitaya, Justin Dallant, Erik Demaine, Michael Kaufmann, Linda Kleist, Csaba D. Tóth \& Torsten Ueckerdt}
+          {The 33rd International Symposium on Graph Drawing and Network Visualization (GD)}
+          {2025}
+          {%
+%
+%
+%
+          }
+          {3}
+ \vspace{-.5em}  
+      
+        \publication
+          {Sliding Squares in Parallel}
+          {
+ Hugo Akitaya, Sándor Fekete, Peter Kramer, Saba Molaei, Christian Rieck \& Tobias Wallner}
+          {The European Symposium on Algorithms (ESA)}
+          {2025}
+          {%
+%
+%
+%
+          }
+          {4}
+ 
+    \setcounter{pubnum}{\value{enumi}}
+    \end{enumerate}
+    % \resumeSubHeadingListEnd
+    \subsection*{Journal Papers}%
+    % \resumeSubHeadingListStart
+  
+    \begin{enumerate}
+    \setcounter{enumi}{\value{pubnum}}
+      
+        \publication
+          {Minimum Plane Bichromatic Spanning Trees}
+          {
+ Hugo Akitaya, Ahmad Biniaz, Erik Demaine, Linda Kleist \& Csaba D. Tóth}
+          {ACM Transactions on Algorithms (Transactions on Algorithms)}
+          {2025}
+          {%
+\href{https://dl.acm.org/doi/pdf/10.1145/3747591}{\pdficon}%
+%
+\quad\href{https://doi.org/10.1145/3747591}{\doilabel}%
+          }
+          {1}
+ \vspace{-.5em}  
+      
+        \publication
+          {Physical Visitor Access Control and Authentication Using Blockchain, Smart Contracts and Internet of Things}
+          {
+ Yesem Kurt Peker, Alfredo J. Perez \& Jarel Hearst}
+          {Cryptography (MDPI), Special Issue on Emerging Topics in Blockchain Security and Privacy (Cryptography)}
+          {2022}
+          {%
+\href{https://www.mdpi.com/2410-387X/6/4/65}{\pdficon}%
+%
+\quad\href{https://doi.org/10.3390/cryptography6040065}{\doilabel}%
+          }
+          {2}
+ 
+    \setcounter{pubnum}{\value{enumi}}
+    \end{enumerate}
+    % \resumeSubHeadingListEnd
+    \subsection*{Conference Papers}%
+    % \resumeSubHeadingListStart
+  
+    \begin{enumerate}
+    \setcounter{enumi}{\value{pubnum}}
+      
+        \publication
+          {Input-Sensitive Reconfiguration of Sliding Cubes}
+          {
+ Hugo Akitaya \& Matias Korman}
+          {The Canadian Conference on Computational Geometry (CCCG)}
+          {2025}
+          {%
+\href{https://arxiv.org/pdf/2507.04170}{\pdficon}%
+%
+%
+          }
+          {1}
+ \vspace{-.5em}  
+      
+        \publication
+          {Quasigeodesics on the Cube}
+          {
+ MIT CompGeom Group, Hugo A. Akitaya, Erik D. Demaine, Adam Hesterberg, Thomas C. Hull, Anna Lubiw, Jayson Lynch, Klara Mundilova, Chie Nara, Joseph O'Rourke, Josef Tkadlec \& Ryuhei Uehara}
+          {The Canadian Conference on Computational Geometry (CCCG)}
+          {2025}
+          {%
+\href{https://arxiv.org/pdf/2503.10376}{\pdficon}%
+%
+%
+          }
+          {2}
+ \vspace{-.5em}  
+      
+        \publication
+          {On Inside-out Dissections of Polygons and Polyhedra}
+          {
+ Reymond Akpanya \& Adi Rivkin}
+          {The Canadian Conference on Computational Geometry (CCCG)}
+          {2025}
+          {%
+\href{https://arxiv.org/pdf/2411.06584}{\pdficon}%
+%
+\quad\href{https://doi.org/10.48550/arXiv.2411.06584}{\doilabel}%
+          }
+          {3}
+ \vspace{-.5em}  
+      
+        \publication
+          {Brief Announcement: Broadcast via Mobile Agents in a Dynamic Network: Interplay of Graph Properties \& Agents}
+          {
+ William K. Moses Jr. \& Amanda Redlich}
+          {4th Symposium on Algorithmic Foundations of Dynamic Networks (SAND)}
+          {2025}
+          {%
+\href{https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SAND.2025.17}{\pdficon}%
+%
+\quad\href{https://doi.org/10.4230/LIPIcs.SAND.2025.17}{\doilabel}%
+          }
+          {4}
+ \vspace{-.5em}  
+      
+        \publication
+          {Finding Shortest Reconfiguration Sequences for Modular Robots}
+          {
+ UML Modular Robotics Group, Hugo A. Akitaya, Andrew Clements, Sam Downey, Jonathan Eisenbies, Soham Samanta \& Gabriel Shahrouzi}
+          {41st International Symposium on Computational Geometry Media Exposition (SoCG:ME 2025)}
+          {2025}
+          {%
+\href{https://drops.dagstuhl.de/storage/00lipics/lipics-vol332-socg2025/LIPIcs.SoCG.2025.85/LIPIcs.SoCG.2025.85.pdf}{\pdficon}%
+\quad\href{https://github.com/Modular-Robotics-Group/modular-robotics}{\codeicon}%
+\quad\href{https://doi.org/10.4230/LIPIcs.SoCG.2025.85}{\doilabel}%
+          }
+          {5}
+ \vspace{-.5em}  
+      
+        \publication
+          {Navigation in dynamic graphs: How to defeat the Acme Graph Exploder}
+          {
+ Amanda Epping Redlich \& William K Moses Jr.}
+          {2025 Spring Eastern Sectional Meeting of the American Mathematical Society (AMS Spring 2025)}
+          {2025}
+          {%
+%
+%
+%
+          }
+          {6}
+ \vspace{-.5em}  
+      
+        \publication
+          {Minimum Plane Bichromatic Spanning Trees}
+          {
+ Hugo A. Akitaya, Ahmad Biniaz, Erik D. Demaine, Linda Kleist \& Csaba D. Tóth}
+          {35th International Symposium on Algorithms and Computation (ISAAC)}
+          {2024}
+          {%
+\href{https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ISAAC.2024.4}{\pdficon}%
+%
+\quad\href{https://doi.org/10.4230/LIPIcs.ISAAC.2024.4}{\doilabel}%
+          }
+          {7}
+ \vspace{-.5em}  
+      
+        \publication
+          {Easier Ways to Prove Counting Hard: A Dichotomy for Generalized \#SAT, Applied to Constraint Graphs}
+          {
+ MIT Hardness Group, Josh Brunner, Erik D. Demaine, Jenny Diomidova, Timothy Gomez, Markus Hecher \& Zixiang Zhou}
+          {35th International Symposium on Algorithms and Computation (ISAAC)}
+          {2024}
+          {%
+\href{https://drops.dagstuhl.de/storage/00lipics/lipics-vol322-isaac2024/LIPIcs.ISAAC.2024.51/LIPIcs.ISAAC.2024.51.pdf}{\pdficon}%
+%
+\quad\href{https://doi.org/10.4230/LIPIcs.ISAAC.2024.51}{\doilabel}%
+          }
+          {8}
+ \vspace{-.5em}  
+      
+        \publication
+          {Agent Motion Planning as Block Asynchronous Cellular Automata: Pushing, Pulling, Suplexing, and More}
+          {
+ MIT Hardness Group, Hayashi Ani, Josh Brunner, Erik D. Demaine, Jenny Diomidova, Timothy Gomez, Della Hendrickson, Yael Kirkpatrick, Jeffery Li, Jayson Lynch \& Ritam Nag}
+          {21st International Conference on Unconventional Computation and Natural Computation (UCNC)}
+          {2024}
+          {%
+\href{https://link.springer.com/chapter/10.1007/978-3-031-63742-1_16}{\pdficon}%
+%
+\quad\href{https://doi.org/10.1007/978-3-031-63742-1_16}{\doilabel}%
+          }
+          {9}
+ \vspace{-.5em}  
+      
+        \publication
+          {A Universal In-Place Reconfiguration Algorithm for Sliding Cube-Shaped Robots in a Quadratic Number of Moves}
+          {
+ Zachary Abel, Hugo A. Akitaya, Scott Duke Kominers \& Matias Korman}
+          {40th International Symposium on Computational Geometry (SoCG)}
+          {2024}
+          {%
+\href{https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SoCG.2024.1}{\pdficon}%
+%
+\quad\href{https://doi.org/10.4230/LIPIcs.SoCG.2024.1}{\doilabel}%
+          }
+          {10}
+ \vspace{-.5em}  
+      
+        \publication
+          {Super Guarding and Dark Rays in Art Galleries}
+          {
+ MIT CompGeom Group, Hugo A. Akitaya, Erik D. Demaine, Adam Hesterberg, Anna Lubiw, Jayson Lynch \& Joseph O'Rourke}
+          {The Canadian Conference on Computational Geometry (CCCG)}
+          {2023}
+          {%
+\href{https://arxiv.org/pdf/2404.04613}{\pdficon}%
+%
+%
+          }
+          {11}
+ \vspace{-.5em}  
+      
+        \publication
+          {Blockchain Ensured Physical Visitor Access Control and Authentication}
+          {
+ Jarel Hearst \& Yessem Kurt Peker}
+          {IEEE International Conference on Mobile Ad Hoc and Smart Systems, REUNS (IEEE MASS REUNS)}
+          {2022}
+          {%
+\href{https://par.nsf.gov/servlets/purl/10376999}{\pdficon}%
+%
+%
+          }
+          {12}
+ 
+    \setcounter{pubnum}{\value{enumi}}
+    \end{enumerate}
+    % \resumeSubHeadingListEnd
+    \subsection*{Other Publications}%
+    % \resumeSubHeadingListStart
+  
+    \begin{enumerate}
+    \setcounter{enumi}{\value{pubnum}}
+      
+        \publication
+          {Open Problems from CCCG 2025}
+          {
+ Hugo Akitaya}
+          {The Canadian Conference on Computational Geoemtry (CCCG)}
+          {2025}
+          {%
+%
+%
+%
+          }
+          {1}
+ \vspace{-.5em}  
+      
+        \publication
+          {Hardness Table Layout Hardness Table}
+          {
+ MIT Hardness Group, Josh Brunner, Andy Tockman, Della Hendrickson, Hayashi Layers, Timothy Gomez, Erik D. Demaine \& Jenny Diomidova}
+          {SIGTBD}
+          {2025}
+          {%
+%
+%
+%
+          }
+          {2}
+ \vspace{-.5em}  
+      
+        \publication
+          {Open Problems from CCCG 2024}
+          {
+ Reymond Akpanya \& Bastien Rivier}
+          {The Canadian Conference on Computational Geoemtry (CCCG)}
+          {2024}
+          {%
+%
+%
+%
+          }
+          {3}
+ 
+    \setcounter{pubnum}{\value{enumi}}
+    \end{enumerate}
+    % \resumeSubHeadingListEnd
+    \subsection*{Preprints}%
+    % \resumeSubHeadingListStart
+  
+    \begin{enumerate}
+    \setcounter{enumi}{\value{pubnum}}
+      
         \resumeOneLine{Reconfiguration of 3D Pivoting Modular Robots%
 \quad\href{https://arxiv.org/pdf/2304.09990}{\pdficon}%
 %
 \quad\href{https://doi.org/10.48550/arXiv.2304.09990}{\doilabel}%
         }{2023}
-    \resumeSubHeadingListEnd
-    \subsection*{Conference Papers}\vspace{-1em}%
-    \resumeSubHeadingListStart
-        \resumeSubheading
-          {Input-Sensitive Reconfiguration of Sliding Cubes}
-          {2025}
-          {The Canadian Conference on Computational Geometry (CCCG)}
-          {%
-\href{https://arxiv.org/pdf/2507.04170}{\pdficon}%
-%
-%
-          }\vspace{0.35em}
-        \resumeSubheading
-          {Quasigeodesics on the Cube}
-          {2025}
-          {The Canadian Conference on Computational Geometry (CCCG)}
-          {%
-\href{https://arxiv.org/pdf/2503.10376}{\pdficon}%
-%
-%
-          }\vspace{0.35em}
-        \resumeSubheading
-          {On Inside-out Dissections of Polygons and Polyhedra}
-          {2025}
-          {The Canadian Conference on Computational Geometry (CCCG)}
-          {%
-\href{https://arxiv.org/pdf/2411.06584}{\pdficon}%
-%
-\quad\href{https://doi.org/10.48550/arXiv.2411.06584}{\doilabel}%
-          }\vspace{0.35em}
-        \resumeSubheading
-          {Brief Announcement: Broadcast via Mobile Agents in a Dynamic Network: Interplay of Graph Properties \& Agents}
-          {2025}
-          {4th Symposium on Algorithmic Foundations of Dynamic Networks (SAND)}
-          {%
-\href{https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SAND.2025.17}{\pdficon}%
-%
-\quad\href{https://doi.org/10.4230/LIPIcs.SAND.2025.17}{\doilabel}%
-          }\vspace{0.35em}
-        \resumeSubheading
-          {Finding Shortest Reconfiguration Sequences for Modular Robots}
-          {2025}
-          {41st International Symposium on Computational Geometry Media Exposition (SoCG:ME 2025)}
-          {%
-\href{https://drops.dagstuhl.de/storage/00lipics/lipics-vol332-socg2025/LIPIcs.SoCG.2025.85/LIPIcs.SoCG.2025.85.pdf}{\pdficon}%
-\quad\href{https://github.com/Modular-Robotics-Group/modular-robotics}{\codeicon}%
-\quad\href{https://doi.org/10.4230/LIPIcs.SoCG.2025.85}{\doilabel}%
-          }\vspace{0.35em}
-        \resumeSubheading
-          {Navigation in dynamic graphs: How to defeat the Acme Graph Exploder}
-          {2025}
-          {2025 Spring Eastern Sectional Meeting of the American Mathematical Society (AMS Spring 2025)}
-          {%
-%
-%
-%
-          }\vspace{0.35em}
-        \resumeSubheading
-          {Minimum Plane Bichromatic Spanning Trees}
-          {2024}
-          {35th International Symposium on Algorithms and Computation (ISAAC)}
-          {%
-\href{https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ISAAC.2024.4}{\pdficon}%
-%
-\quad\href{https://doi.org/10.4230/LIPIcs.ISAAC.2024.4}{\doilabel}%
-          }\vspace{0.35em}
-        \resumeSubheading
-          {Easier Ways to Prove Counting Hard: A Dichotomy for Generalized \#SAT, Applied to Constraint Graphs}
-          {2024}
-          {35th International Symposium on Algorithms and Computation (ISAAC)}
-          {%
-\href{https://drops.dagstuhl.de/storage/00lipics/lipics-vol322-isaac2024/LIPIcs.ISAAC.2024.51/LIPIcs.ISAAC.2024.51.pdf}{\pdficon}%
-%
-\quad\href{https://doi.org/10.4230/LIPIcs.ISAAC.2024.51}{\doilabel}%
-          }\vspace{0.35em}
-        \resumeSubheading
-          {Agent Motion Planning as Block Asynchronous Cellular Automata: Pushing, Pulling, Suplexing, and More}
-          {2024}
-          {21st International Conference on Unconventional Computation and Natural Computation (UCNC)}
-          {%
-\href{https://link.springer.com/chapter/10.1007/978-3-031-63742-1_16}{\pdficon}%
-%
-\quad\href{https://doi.org/10.1007/978-3-031-63742-1_16}{\doilabel}%
-          }\vspace{0.35em}
-        \resumeSubheading
-          {A Universal In-Place Reconfiguration Algorithm for Sliding Cube-Shaped Robots in a Quadratic Number of Moves}
-          {2024}
-          {40th International Symposium on Computational Geometry (SoCG)}
-          {%
-\href{https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SoCG.2024.1}{\pdficon}%
-%
-\quad\href{https://doi.org/10.4230/LIPIcs.SoCG.2024.1}{\doilabel}%
-          }\vspace{0.35em}
-        \resumeSubheading
-          {Super Guarding and Dark Rays in Art Galleries}
-          {2023}
-          {The Canadian Conference on Computational Geometry (CCCG)}
-          {%
-\href{https://arxiv.org/pdf/2404.04613}{\pdficon}%
-%
-%
-          }\vspace{0.35em}
-        \resumeSubheading
-          {Blockchain Ensured Physical Visitor Access Control and Authentication}
-          {2022}
-          {IEEE International Conference on Mobile Ad Hoc and Smart Systems, REUNS (REUNS)}
-          {%
-\href{https://par.nsf.gov/servlets/purl/10376999}{\pdficon}%
-%
-%
-          }\vspace{0.35em}
-    \resumeSubHeadingListEnd
-    \subsection*{Journal Papers}\vspace{-1em}%
-    \resumeSubHeadingListStart
-        \resumeSubheading
-          {Minimum Plane Bichromatic Spanning Trees}
-          {2025}
-          {ACM Transactions on Algorithms (Transactions on Algorithms)}
-          {%
-\href{https://dl.acm.org/doi/pdf/10.1145/3747591}{\pdficon}%
-%
-\quad\href{https://doi.org/10.1145/3747591}{\doilabel}%
-          }\vspace{0.35em}
-        \resumeSubheading
-          {Physical Visitor Access Control and Authentication Using Blockchain, Smart Contracts and Internet of Things}
-          {2022}
-          {Cryptography (MDPI), Special Issue on Emerging Topics in Blockchain Security and Privacy (Cryptography)}
-          {%
-\href{https://www.mdpi.com/2410-387X/6/4/65}{\pdficon}%
-%
-\quad\href{https://doi.org/10.3390/cryptography6040065}{\doilabel}%
-          }\vspace{0.35em}
-    \resumeSubHeadingListEnd
+ 
+    \setcounter{pubnum}{\value{enumi}}
+    \end{enumerate}
+    % \resumeSubHeadingListEnd
 
 %-----------PRESENTATIONS---------------
 \section{Presentations}
-\resumeSubHeadingListStart
-  \resumeSubheading
-    {}
-    {2020}
-    { ()}
-    {%
-\href{tba/docstore/talks/slides.pdf}{\pdficon}%
-%
-    }
-\resumeSubHeadingListEnd
+% \resumeSubHeadingListStart
+\begin{enumerate}
+  \presentation{Input-Sensitive Reconfiguration of Sliding Cubes}{The Canadian Conference on Computational Geometry}{2025} \vspace{-.5em}  
+  % \resumeSubheading
+  %   {Input-Sensitive Reconfiguration of Sliding Cubes}
+  %   {2025}
+  %   {The Canadian Conference on Computational Geometry (CCCG)}
+  %   {%
+  %     \href{tba/docstore/talks/slides.pdf}{\pdficon}%
+  %     %
+  %   }
+  %   {}
+  \presentation{On Inside-out Dissections of Polygons and Polyhedra}{The Canadian Conference on Computational Geometry}{2025} \vspace{-.5em}  
+  % \resumeSubheading
+  %   {On Inside-out Dissections of Polygons and Polyhedra}
+  %   {2025}
+  %   {The Canadian Conference on Computational Geometry (CCCG)}
+  %   {%
+  %     \href{tba/docstore/talks/slides.pdf}{\pdficon}%
+  %     %
+  %   }
+  %   {}
+  \presentation{Finding Shortest Reconfiguration Sequences for Modular Robots}{41st International Symposium on Computational Geometry Media Exposition}{2025} \vspace{-.5em}  
+  % \resumeSubheading
+  %   {Finding Shortest Reconfiguration Sequences for Modular Robots}
+  %   {2025}
+  %   {41st International Symposium on Computational Geometry Media Exposition (SoCG:ME)}
+  %   {%
+  %     \href{tba/docstore/talks/slides.pdf}{\pdficon}%
+  %     %
+  %   }
+  %   {}
+  \presentation{Minimum Plane Bichromatic Spanning Trees}{35th International Symposium on Algorithms and Computation}{2024} \vspace{-.5em}  
+  % \resumeSubheading
+  %   {Minimum Plane Bichromatic Spanning Trees}
+  %   {2024}
+  %   {35th International Symposium on Algorithms and Computation (ISAAC)}
+  %   {%
+  %     \href{tba/docstore/talks/slides.pdf}{\pdficon}%
+  %     %
+  %   }
+  %   {}
+  \presentation{Easier Ways to Prove Counting Hard: A Dichotomy for Generalized \#SAT, Applied to Constraint Graphs}{35th International Symposium on Algorithms and Computation}{2024} \vspace{-.5em}  
+  % \resumeSubheading
+  %   {Easier Ways to Prove Counting Hard: A Dichotomy for Generalized \#SAT, Applied to Constraint Graphs}
+  %   {2024}
+  %   {35th International Symposium on Algorithms and Computation (ISAAC)}
+  %   {%
+  %     \href{tba/docstore/talks/slides.pdf}{\pdficon}%
+  %     %
+  %   }
+  %   {}
+  \presentation{A Universal In-Place Reconfiguration Algorithm for Sliding Cube-Shaped Robots in a Quadratic Number of Moves}{40th International Symposium on Computational Geometry}{2024} \vspace{-.5em}  
+  % \resumeSubheading
+  %   {A Universal In-Place Reconfiguration Algorithm for Sliding Cube-Shaped Robots in a Quadratic Number of Moves}
+  %   {2024}
+  %   {40th International Symposium on Computational Geometry (SoCG)}
+  %   {%
+  %     \href{tba/docstore/talks/slides.pdf}{\pdficon}%
+  %     %
+  %   }
+  %   {}
+  \presentation{Super Guarding and Dark Rays in Art Galleries}{The Canadian Conference on Computational Geometry}{2023} \vspace{-.5em}  
+  % \resumeSubheading
+  %   {Super Guarding and Dark Rays in Art Galleries}
+  %   {2023}
+  %   {The Canadian Conference on Computational Geometry (CCCG)}
+  %   {%
+  %     \href{tba/docstore/talks/slides.pdf}{\pdficon}%
+  %     %
+  %   }
+  %   {}
+  \presentation{Reconfiguration of 3D Pivoting Modular Robots}{SoCG Young Researchers Forum}{2023} \vspace{-.5em}  
+  % \resumeSubheading
+  %   {Reconfiguration of 3D Pivoting Modular Robots}
+  %   {2023}
+  %   {SoCG Young Researchers Forum (SoCG:YRF)}
+  %   {%
+  %     \href{tba/docstore/talks/slides.pdf}{\pdficon}%
+  %     %
+  %   }
+  %   {}
+  \presentation{Blockchain Ensured Physical Visitor Access Control and Authentication}{IEEE International Conference on Mobile Ad Hoc and Smart Systems, REUNS}{2022} 
+  % \resumeSubheading
+  %   {Blockchain Ensured Physical Visitor Access Control and Authentication}
+  %   {2022}
+  %   {IEEE International Conference on Mobile Ad Hoc and Smart Systems, REUNS (REUNS)}
+  %   {%
+  %     \href{tba/docstore/talks/slides.pdf}{\pdficon}%
+  %     %
+  %   }
+  %   {}
+\end{enumerate}
+% \resumeSubHeadingListEnd
 
 %-----------ACCOLADES-----------------
 \section{Accolades}
