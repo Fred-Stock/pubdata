@@ -42,6 +42,30 @@
   web_link: null
   doi: null
 
+  - title: "Agent Motion Planning as Block Asynchronous Cellular Automata: Pushing, Pulling, Suplexing, and More"
+  short_title: "Block Pushing as Asynchronous Cellular Automata"
+  authors:
+    - MIT Hardness Group
+    - Hayashi Ani
+    - Josh Brunner
+    - Erik D. Demaine
+    - Jenny Diomidova
+    - Timothy Gomez
+    - Della Hendrickson
+    - Yael Kirkpatrick
+    - Jeffery Li
+    - Jayson Lynch
+    - Ritam Nag
+  publication_year: TBA
+  venue_type: "upcoming"
+  venue: "Natural Computing"
+  venue_short: "NACO"
+  code_link: null
+  pdf_link: "docstore:Push-Pull-NACO.pdf"
+  web_link: "https://link.springer.com/collections/dhhcbcghgd"
+  doi: null
+
+
 - title: "Connectivity Augmentation for Planar Graphs and Beyond-Planar Graphs"
   short_title: "Planar Connectivity Augmentation"
   authors:
@@ -77,29 +101,6 @@
   code_link: null
   pdf_link: null
   web_link: null
-  doi: null
-
-- title: "Agent Motion Planning as Block Asynchronous Cellular Automata: Pushing, Pulling, Suplexing, and More"
-  short_title: "Block Pushing as Asynchronous Cellular Automata"
-  authors:
-    - MIT Hardness Group
-    - Hayashi Ani
-    - Josh Brunner
-    - Erik D. Demaine
-    - Jenny Diomidova
-    - Timothy Gomez
-    - Della Hendrickson
-    - Yael Kirkpatrick
-    - Jeffery Li
-    - Jayson Lynch
-    - Ritam Nag
-  publication_year: 2024
-  venue_type: "upcoming"
-  venue: "Natural Computing"
-  venue_short: "NACO"
-  code_link: null
-  pdf_link: "docstore:Push-Pull-NACO.pdf"
-  web_link: "https://link.springer.com/collections/dhhcbcghgd"
   doi: null
 
 ####################################################### 2025 ###############################################################
