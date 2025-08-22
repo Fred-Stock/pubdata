@@ -42,7 +42,8 @@
   web_link: null
   doi: null
 
-  - title: "Agent Motion Planning as Block Asynchronous Cellular Automata: Pushing, Pulling, Suplexing, and More"
+
+- title: "Agent Motion Planning as Block Asynchronous Cellular Automata: Pushing, Pulling, Suplexing, and More"
   short_title: "Block Pushing as Asynchronous Cellular Automata"
   authors:
     - MIT Hardness Group
