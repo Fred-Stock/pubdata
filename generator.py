@@ -62,7 +62,10 @@ for pub in publications:
 sorted_venue_types = [v for v in venue_order if v in organized_pubs]
 for venue_type in organized_pubs:
     if not venue_type == "upcoming":
+        print("not upcomming")
         organized_pubs[venue_type] = dict(sorted(organized_pubs[venue_type].items(), reverse=True))
+    else: 
+        print("here")
 
 # Generate HTML for publications
 def generate_pub_html(pub):
