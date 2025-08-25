@@ -403,14 +403,13 @@
   web_link: "https://arxiv.org/pdf/2404.04613"
   doi: null
 
-################################# REPLACE WITH YRF STUFF
 - title: "Reconfiguration of 3D Pivoting Modular Robots"
   short_title: "3D Pivoting Modular Robots"
   authors:
     - Hugo Akitaya 
     - Frederick Stock
   publication_year: 2023
-  venue_type: "preprint"
+  venue_type: "other"
   venue: "The International Symposium on Computational Geometry: Young Researchers Forum"
   venue_short: "SoCG:YRF"
   code_link: null
