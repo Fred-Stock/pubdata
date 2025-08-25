@@ -16,7 +16,7 @@ if __name__ == '__main__':
         'name': 'Frederick Stock',
         'email': 'frederick\\_stock@student.uml.edu',
         'phone': '+1-860-759-5072',
-        'website': 'tba',
+        'website': 'fred-stock.github.io',
         'scholar': 'https://scholar.google.com/citations?user=VzJruXwAAAAJ'
     }
 

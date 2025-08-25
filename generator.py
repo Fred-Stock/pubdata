@@ -42,10 +42,10 @@ bio = ("I am a Ph.D. student at the University of Massachussetts Lowell, in Lowe
 venue_order = ["upcoming", "journal",  "conference", "other", "preprint",  "thesis", "workshop", "software"]
 venue_type_title = {
   "upcoming":"Upcoming Publications",
-  "preprint":"Preprints",
   "conference":"Conference Proceedings",
-  "other":"Other Publications",
+  "preprint":"Preprints",
   "journal":"Journal Papers",
+  "other":"Other Publications",
   "thesis":"Theses",
   "workshop":"Workshop Papers and Others",
   "software":"Software",
@@ -53,11 +53,20 @@ venue_type_title = {
 
 
 # Organize publications by venue type and year
-organized_pubs = defaultdict(lambda: defaultdict(list))
+organized_pubs     = defaultdict(lambda: defaultdict(list))
+organized_collabs  = []
 for pub in publications:
     venue_type = pub['venue_type'].lower()
     year = pub['publication_year']
     organized_pubs[venue_type][year].append(pub)
+    authors = pub['authors']
+    for author in authors:
+        if author not  in organized_collabs:
+            if not author.split(" ")[-1] == "Group":
+                organized_collabs.append(author)       
+
+organized_collabs = sorted(organized_collabs, key=lambda x:x.split(" ")[-1]) 
+
 
 # Sort venue types and years
 sorted_venue_types = [v for v in venue_order if v in organized_pubs]
