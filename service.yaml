@@ -22,14 +22,14 @@
 
 ########################### Reviews
 
-- service_type: "sub-reviewer"
+- service_type: "reviewer"
   year: 
     - 2025
   venue_type: "conference"
   venue: "International Symposium on Distributed Computing"
   venue_short: "DISC"
 
-- service_type: "sub-reviewer"
+- service_type: "reviewer"
   year: 
     - 2025
     - 2024
@@ -37,35 +37,42 @@
   venue: "International Symposium on Computational Geometry"
   venue_short: "SoCG"
 
-- service_type: "sub-reviewer"
+- service_type: "reviewer"
   year: 
-    - 2025
+    - 2025 x2
   venue_type: "journal"
   venue: "Journal on Computational Geometry"
   venue_short: "JoCG"
 
-- service_type: "sub-reviewer"
+- service_type: "reviewer"
+  year:
+    - 2024
+  venue_type: "workshop"
+  venue: "The Fall Workshop on Computational Geometry"
+  venue_short: "FWCG"
+
+- service_type: "reviewer"
   year: 
     - 2024
   venue_type: "conference"
   venue: "The Canadian Conference on Computational Geoemtry"
   venue_short: "CCCG"
 
-# - service_type: "sub-reviewer"
+# - service_type: "reviewer"
 #   year: 
 #     - 2024
 #   venue_type: "conference"
 #   venue: "International Symposium on Computational Geoemtry"
 #   venue_short: "SoCG"
 
-- service_type: "sub-reviewer"
+- service_type: "reviewer"
   year: 
     - 2024
   venue_type: "conference"
   venue: "International Symposium on Algorithms and Computation"
   venue_short: "ISAAC"
 
-- service_type: "sub-reviewer"
+- service_type: "reviewer"
   year: 
     - 2024
   venue_type: "journal"

@@ -7,15 +7,8 @@
 #   year: 2020
 
 #REUNS 2022 (Poster)
-#YRF 2023
-#CCCG 2023
-#SOCG 2024
 #FWCG 2024
-#ISAAC 2024
-#ISAAC 2024
-#SOCG:ME 2025
-#CCCG 2025
-#CCCG 2025
+
 
 - title: "Input-Sensitive Reconfiguration of Sliding Cubes"
   short_title: "Input-Sensitive Sliding Cubes"
@@ -81,7 +74,7 @@
   venue_short: "SoCG:YRF"
   year: 2023
 
-- title: "Blockchain Ensured Physical Visitor Access Control and Authentication"
+- title: "Blockchain Ensured Physical Visitor Access Control and Authentication (poster)"
   short_title: "Blockchain Phyical Access Control"
   slides_link: "docstore:talks/slides.pdf"
   venue_type: "conference"

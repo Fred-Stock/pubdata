@@ -62,7 +62,7 @@
   %   {\small #5} &\\ 
   % \end{tabularx}%
   \item ``#1'' %
-   (Joint work with#2), %
+   (\ignorespaces#2 testi), %
      \emph{#3}, %
       #4% 
 % \item[#6] %\vtop{%
@@ -196,7 +196,7 @@
 \section{Service}
 \resumeSubHeadingListStart
 <% for s in service: %>
-  <% set label = s.service_type.lower() == 'reviewer' and 'Reviewer/Sub-reviewer' 
+  <% set label = s.service_type.lower() == 'reviewer' and 'Reviewer' 
        or s.service_type.lower()=='sub-reviewer' and 'Sub-Reviewer' 
        or s.service_type %>
   \resumeOneLine{<< label >>: << s.venue >><% if s.venue_short %> (<< s.venue_short >>)<% endif %>}{
