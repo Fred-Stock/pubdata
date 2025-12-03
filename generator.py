@@ -28,13 +28,13 @@ for talk in talks:
 
 # Define the self-author
 self_author = "Frederick Stock"
-self_author_modified = "Freddy"
+self_author_modified = "Freddy <img src=\"croppedpfp.png\" style=\"width:75px;height:auto;border-radius:50%;float:right;\">"
 
 # Personal information for the header
 email = "frederick_stock [at] student.uml.edu "
 subtitle = "Ph.D. Student in Computational Geometry"
 bio = ("I am a Ph.D. student at the University of Massachussetts Lowell, in Lowell Mass. I have an expected graduation date of May 2026. "
-        "My interests lie in Algorithms and Computational geometry, with a focus on Reconfiguration algorithms. "
+        "My interests lie in Algorithms and Computational geometry, with a focus on reconfiguration algorithms. "
         "<b>I am actively soliciting job offers for after my graduation.</b> "
         "Open to significant relocation. ")
 
