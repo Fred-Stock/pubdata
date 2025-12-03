@@ -50,6 +50,22 @@
   venue_short: "ISAAC"
   year: 2024
 
+- title: "Input-Sensitive Reconfiguration of Sliding Cubes"
+  short_title: "Input-Sensitive Sliding Cubes"
+  slides_link: "docstore:talks/slides.pdf"
+  venue_type: "workshop"
+  venue: "The Fall Workshop on Computational Geometry"
+  venue_short: "FWCG"
+  year: 2024
+
+- title: "On Inside-out Dissections of Polygons and Polyhedra"
+  short_title: "Inside-out Dissections of Polygons and Polyhedra"
+  slides_link: "docstore:talks/slides.pdf"
+  venue_type: "workshop"
+  venue: "The Fall Workshop on Computational Geometry"
+  venue_short: "FWCG"
+  year: 2024 
+
 - title: "A Universal In-Place Reconfiguration Algorithm for Sliding Cube-Shaped Robots in a Quadratic Number of Moves"
   short_title: "Universal In-Place Reconfiguration"
   slides_link: "docstore:talks/slides.pdf"

@@ -1,12 +1,16 @@
-#TA ALG x3
-#Mathnasium
+- organization: "University of Massachusetts Lowell"
+  job_title: "Research Assistant"
+  start: "Fall 2024"
+  end: "Current"
+  comments: [
+    "Research assistant for Hugo Akitaya, funded by NSF grant CCF-2348067."
+  ]
 
-- organization: "University of Massachussets Lowell"
+- organization: "University of Massachusetts Lowell"
   job_title: "Teaching Assistant"
   start: "Fall 2023"
   end: "Spring 2024"
   comments: [
-    "Three sections",
-    "Recitation, Office hours, Grading, Managing graders"
+    "Teaching assistant for two sections of \"COMP 5030: Algorithms\" (graduate level) and one section of \"COMP 4030: Algorithms\". Duties involved hosting weekly office hours, grading homeworks, and running weekly recitations."
   ]
 

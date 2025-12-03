@@ -21,13 +21,14 @@ if __name__ == '__main__':
     }
 
     data = {
-        'personal': personal,
+        'personal' : personal,
         'accolades': load_yaml('accolades.yaml'),
         'education': load_yaml('education.yaml'),
         'positions': load_yaml('positions.yaml'),
-        'pubs': load_yaml('pubs.yaml'),
-        'service': load_yaml('service.yaml'),
-        'talks': load_yaml('talks.yaml'),
+        'pubs'     : load_yaml('pubs.yaml'),
+        'service'  : load_yaml('service.yaml'),
+        'talks'    : load_yaml('talks.yaml'),
+        'collabs'  : load_yaml('collab_data.yaml')
     }
 
     # normalize docstore links

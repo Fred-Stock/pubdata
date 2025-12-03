@@ -28,7 +28,8 @@ for talk in talks:
 
 # Define the self-author
 self_author = "Frederick Stock"
-self_author_modified = "Freddy"
+self_site_title = "Freddy Stock"
+self_author_modified = "Freddy <img src=\"croppedpfp.png\" style=\"width:75px;height:auto;border-radius:50%;float:right;\">"
 
 # Personal information for the header
 email = "frederick_stock [at] student.uml.edu "
@@ -61,8 +62,8 @@ for pub in publications:
     organized_pubs[venue_type][year].append(pub)
     authors = pub['authors']
     for author in authors:
-        if author not  in organized_collabs:
-            if not author.split(" ")[-1] == "Group":
+        if author not in organized_collabs:
+            if not (author.split(" ")[-1] == "Group" or author == "Frederick Stock"):
                 organized_collabs.append(author)       
 
 organized_collabs = sorted(organized_collabs, key=lambda x:x.split(" ")[-1]) 
@@ -93,7 +94,7 @@ pub_type_totals = pub_type_totals[:-3] # remove trailing " | "
 
 # Generate HTML for publications
 def generate_pub_html(pub):
-    authors = ', '.join([f"<b>{self_author_modified}</b>" if author == self_author else author for author in pub['authors']])
+    authors = ', '.join([f"<b>{self_author}</b>" if author == self_author else author for author in pub['authors']])
     if "venue" in pub.keys():
         venue = f'<abbr title="{pub["venue"]}">{pub["venue_short"]}</abbr>'
         venue_span = ""
@@ -199,6 +200,18 @@ for talk in sorted(reversed(talks), key=lambda x: x['year'], reverse=True):
     talks_html += generate_talk_html(talk)
 talks_html += "</ul>"
 
+# Generate Collaborators Section HTML
+
+collabs_html = "<p>"
+for i, collab in enumerate(organized_collabs):
+    collabs_html += collab
+    if i < len(organized_collabs) - 1:
+        collabs_html += ", "
+
+collabs_html += "<p>"
+
+collab_total = str(len(organized_collabs))
+
 # Full HTML Template
 html_template = f"""
 <!DOCTYPE html>
@@ -206,7 +219,7 @@ html_template = f"""
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{self_author_modified}</title>
+    <title>{self_site_title}</title>
     <link rel="stylesheet" href="style.css">
     <style>
         /* Global Styles */
@@ -344,11 +357,20 @@ html_template = f"""
             {pubs_html}
         </div>
 
+        <!-- Collaborators Section -->
+        <div id="content">
+            <h3><b>Collaborators</b> (Total: {collab_total}) </h3>
+            {collabs_html}
+        </div>
+
         <!-- Presentation Section -->
         <div id="content">
             <h3><b>Presentations</b></h3>
             {talks_html}
         </div>
+
+
+
     </div>
 </body>
 </html>
@@ -359,3 +381,14 @@ with open("index.html", "w") as f:
     f.write(html_template)
 
 print("Updated HTML homepage generated successfully as 'index.html'.")
+
+with open("collab_data.yaml", "w") as f:
+    f.write("- collaborators: \"")
+    for i, collab in enumerate(organized_collabs):
+        f.write(collab)
+        if i < len(organized_collabs) - 1:
+            f.write(", ")
+    f.write("\"\n")
+    f.write("  total: " + str(len(organized_collabs)))
+
+print("Updated collabl_data.yaml.")

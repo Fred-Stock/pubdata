@@ -2,6 +2,25 @@
 
 ##################################################### Upcoming #############################################################
 
+- title: "Redistricting in Triangular and Square Grids"
+  short_title: "Redistricting"
+  authors:
+    - Hugo Akitaya
+    - Kyle Dituro
+    - Andrei Gonczi 
+    - Matias Korman
+    - Diane Souvaine
+    - Frederick Stock
+    - Csaba D. Tóth
+  publication_year: "2026"
+  venue_type: "upcoming"
+  venue: "Symposium on Simplicity in Algorithms"
+  venue_short: "SOSA"
+  code_link: null
+  pdf_link: null
+  web_link: null
+  doi: null
+
 - title: "Super Guarding and Dark Rays in Art Galleries"
   short_title: "Super Guarding and Dark Rays"
   authors:
@@ -39,12 +58,11 @@
   web_link: null
   doi: null
 
-
 - title: "Agent Motion Planning as Block Asynchronous Cellular Automata: Pushing, Pulling, Suplexing, and More"
   short_title: "Block Pushing as Asynchronous Cellular Automata"
   authors:
     - MIT Hardness Group
-    - Hayashi Ani
+    - Hayashi Layers
     - Josh Brunner
     - Erik Demaine
     - Jenny Diomidova
@@ -64,6 +82,7 @@
   web_link: "https://link.springer.com/collections/dhhcbcghgd"
   doi: null
 
+####################################################### 2025 ###############################################################
 
 - title: "Connectivity Augmentation for Planar Graphs and Beyond-Planar Graphs"
   short_title: "Planar Connectivity Augmentation"
@@ -77,7 +96,7 @@
     - Csaba D. Tóth
     - Torsten Ueckerdt
   publication_year: 2025
-  venue_type: "upcoming"
+  venue_type: "conference"
   venue: "The 33rd International Symposium on Graph Drawing and Network Visualization"
   venue_short: GD
   code_link: null
@@ -96,15 +115,13 @@
     - Frederick Stock
     - Tobias Wallner
   publication_year: 2025
-  venue_type: "upcoming"
+  venue_type: "conference"
   venue: "The European Symposium on Algorithms"
   venue_short: ESA
   code_link: null
   pdf_link: null
   web_link: null
   doi: null
-
-####################################################### 2025 ###############################################################
 
 - title: "Open Problems from CCCG 2025"
   short_title: "CCCG Open Problems 2025"
@@ -231,8 +248,8 @@
 - title: "Navigation in dynamic graphs: How to defeat the Acme Graph Exploder"
   short_title: "Navigation in dynamic graphs"
   authors:
-    - Amanda Epping Redlich
-    - William K Moses Jr. 
+    - Amanda Redlich
+    - William K. Moses Jr. 
     - Frederick Stock
   publication_year: 2025
   venue_type: "conference"
@@ -323,7 +340,7 @@
   short_title: "Block Pushing as Asynchronous Cellular Automata"
   authors:
     - MIT Hardness Group
-    - Hayashi Ani
+    - Hayashi Layers
     - Josh Brunner
     - Erik Demaine
     - Jenny Diomidova
@@ -425,7 +442,7 @@
   authors:
     - Frederick Stock
     - Jarel Hearst
-    - Yessem Kurt Peker 
+    - Yesem Kurt Peker 
   publication_year: 2022
   venue_type: "conference"
   venue: "IEEE International Conference on Mobile Ad Hoc and Smart Systems, REUNS"

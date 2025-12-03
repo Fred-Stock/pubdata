@@ -1,11 +1,13 @@
 #Reviews
-#CCCG Open Problems Session
-#FWCG Tech Support
-# - service_type: "Recording Open Problems"
-#   year: 2025
-#   venue_type: "conference"
-#   venue: "The Canadian Conference on Computational Geoemtry"
-#   venue_short: "CCCG"
+# CCCG Open Problems Session
+# FWCG Tech Support
+- service_type: "Open Problem Transcription"
+  year:
+    - 2025
+    - 2024
+  venue_type: "conference"
+  venue: "The Canadian Conference on Computational Geoemtry"
+  venue_short: "CCCG"
 
 # - service_type: "Recording Open Problems"
 #   year: 2024
@@ -21,6 +23,20 @@
   venue_short: "FWCG"
 
 ########################### Reviews
+
+- service_type: "reviewer"
+  year: 
+    - 2026
+  venue_type: "conference"
+  venue: "Innovations in Theoretical Computer Science"
+  venue_short: "ITCS"
+
+- service_type: "reviewer"
+  year: 
+    - 2026
+  venue_type: "conference"
+  venue: "International Conference and Workshops on Algorithms and Computation"
+  venue_short: "WALCOM"
 
 - service_type: "reviewer"
   year: 

@@ -7,7 +7,7 @@
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
 \usepackage{amsfonts}
-\usepackage{fontawesome5}    % for \faFilePdf, \faCode
+%\usepackage{fontawesome5}    % for \faFilePdf, \faCode
 \usepackage{tabularx}        % flexible-width tables
 \usepackage{array}           % for >{\raggedright\arraybackslash}
 
@@ -62,7 +62,7 @@
   %   {\small #5} &\\ 
   % \end{tabularx}%
   \item ``#1'' %
-   (\ignorespaces#2 testi), %
+   (\ignorespaces#2), %
      \emph{#3}, %
       #4% 
 % \item[#6] %\vtop{%
@@ -268,6 +268,11 @@
   <% endif %>
 <% endfor %>
 
+%-----------COLLABORATORS--------------
+\subsection*{Collaborators}
+In the above have <<collabs[0].total>> collaborators:
+<<collabs[0].collaborators>>
+
 %-----------PRESENTATIONS---------------
 \section{Presentations}
 % \resumeSubHeadingListStart
@@ -293,6 +298,17 @@
 <% for a in accolades | sort(attribute='year', reverse=true): %>
   \resumeOneLine{<< a.title >>}{<< a.year >>}
 <% endfor %>
+\resumeSubHeadingListEnd
+
+
+%-----------REFERENCES--------------
+\section{References}
+\resumeSubHeadingListStart
+
+<% for r in references:%>
+\resumeSubheading{<< r.writer >>}{<< r.position >>}{<< r.email >>}{<< r.affiliation >>}    
+<% endfor %>
+
 \resumeSubHeadingListEnd
 
 \end{document}

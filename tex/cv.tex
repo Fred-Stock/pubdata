@@ -7,7 +7,7 @@
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
 \usepackage{amsfonts}
-\usepackage{fontawesome5}    % for \faFilePdf, \faCode
+%\usepackage{fontawesome5}    % for \faFilePdf, \faCode
 \usepackage{tabularx}        % flexible-width tables
 \usepackage{array}           % for >{\raggedright\arraybackslash}
 
@@ -62,7 +62,7 @@
   %   {\small #5} &\\ 
   % \end{tabularx}%
   \item ``#1'' %
-   (\ignorespaces#2 testi), %
+   (\ignorespaces#2), %
      \emph{#3}, %
       #4% 
 % \item[#6] %\vtop{%
@@ -140,16 +140,23 @@
 \section{Experience}
 \resumeSubHeadingListStart
   \resumeSubheading
-    {University of Massachussets Lowell}
+    {University of Massachusetts Lowell}
+    {Fall 2024 -- Current}
+    {Research Assistant}
+    {}
+  \begin{itemize}[leftmargin=1.5em]
+      \item {\small 
+    Research assistant for Hugo Akitaya, funded by NSF grant CCF-2348067.
+}
+  \end{itemize}
+  \resumeSubheading
+    {University of Massachusetts Lowell}
     {Fall 2023 -- Spring 2024}
     {Teaching Assistant}
     {}
   \begin{itemize}[leftmargin=1.5em]
       \item {\small 
-    Three sections
-}
-      \item {\small 
-    Recitation, Office hours, Grading, Managing graders
+    Teaching assistant for two sections of "COMP 5030: Algorithms" (graduate level) and one section of "COMP 4030: Algorithms". Duties involved hosting weekly office hours, grading homeworks, and running weekly recitations.
 }
   \end{itemize}
 \resumeSubHeadingListEnd
@@ -172,8 +179,17 @@
 %-----------SERVICE-----------------
 \section{Service}
 \resumeSubHeadingListStart
+  \resumeOneLine{Open Problem Transcription: The Canadian Conference on Computational Geoemtry (CCCG)}{
+2025, 2024  
+  }
   \resumeOneLine{Technical and Adminstrative Support: Fall Workshop on Computational Geometry (FWCG)}{
 2024  
+  }
+  \resumeOneLine{Reviewer: Innovations in Theoretical Computer Science (ITCS)}{
+2026  
+  }
+  \resumeOneLine{Reviewer: International Conference and Workshops on Algorithms and Computation (WALCOM)}{
+2026  
   }
   \resumeOneLine{Reviewer: International Symposium on Distributed Computing (DISC)}{
 2025  
@@ -210,6 +226,20 @@
     \setcounter{enumi}{\value{pubnum}}
       
         \publication
+          {Redistricting in Triangular and Square Grids}
+          {
+ Hugo Akitaya, Kyle Dituro, Andrei Gonczi, Matias Korman, Diane Souvaine, Frederick Stock \& Csaba D. Tóth}
+          {Symposium on Simplicity in Algorithms (SOSA)}
+          {2026}
+          {%
+%
+%
+%
+          }
+          {1}
+ \vspace{-.5em}  
+      
+        \publication
           {Super Guarding and Dark Rays in Art Galleries}
           {
  MIT CompGeom Group, Hugo Akitaya, Erik Demaine, Adam Hesterberg, Anna Lubiw, Jayson Lynch, Joseph O'Rourke \& Frederick Stock}
@@ -220,7 +250,7 @@
 %
 %
           }
-          {1}
+          {2}
  \vspace{-.5em}  
       
         \publication
@@ -234,13 +264,13 @@
 %
 %
           }
-          {2}
+          {3}
  \vspace{-.5em}  
       
         \publication
           {Agent Motion Planning as Block Asynchronous Cellular Automata: Pushing, Pulling, Suplexing, and More}
           {
- MIT Hardness Group, Hayashi Ani, Josh Brunner, Erik Demaine, Jenny Diomidova, Timothy Gomez, Della Hendrickson, Yael Kirkpatrick, Jeffery Li, Jayson Lynch, Ritam Nag \& Frederick Stock}
+ MIT Hardness Group, Hayashi Layers, Josh Brunner, Erik Demaine, Jenny Diomidova, Timothy Gomez, Della Hendrickson, Yael Kirkpatrick, Jeffery Li, Jayson Lynch, Ritam Nag \& Frederick Stock}
           {Natural Computing (NACO)}
           {TBA}
           {%
@@ -248,35 +278,7 @@
 %
 %
           }
-          {3}
- \vspace{-.5em}  
-      
-        \publication
-          {Connectivity Augmentation for Planar Graphs and Beyond-Planar Graphs}
-          {
- Hugo Akitaya, Justin Dallant, Erik Demaine, Michael Kaufmann, Linda Kleist, Frederick Stock, Csaba D. Tóth \& Torsten Ueckerdt}
-          {The 33rd International Symposium on Graph Drawing and Network Visualization (GD)}
-          {2025}
-          {%
-%
-%
-%
-          }
           {4}
- \vspace{-.5em}  
-      
-        \publication
-          {Sliding Squares in Parallel}
-          {
- Hugo Akitaya, Sándor Fekete, Peter Kramer, Saba Molaei, Christian Rieck, Frederick Stock \& Tobias Wallner}
-          {The European Symposium on Algorithms (ESA)}
-          {2025}
-          {%
-%
-%
-%
-          }
-          {5}
  
     \setcounter{pubnum}{\value{enumi}}
     \end{enumerate}
@@ -324,6 +326,34 @@
     \setcounter{enumi}{\value{pubnum}}
       
         \publication
+          {Connectivity Augmentation for Planar Graphs and Beyond-Planar Graphs}
+          {
+ Hugo Akitaya, Justin Dallant, Erik Demaine, Michael Kaufmann, Linda Kleist, Frederick Stock, Csaba D. Tóth \& Torsten Ueckerdt}
+          {The 33rd International Symposium on Graph Drawing and Network Visualization (GD)}
+          {2025}
+          {%
+%
+%
+%
+          }
+          {1}
+ \vspace{-.5em}  
+      
+        \publication
+          {Sliding Squares in Parallel}
+          {
+ Hugo Akitaya, Sándor Fekete, Peter Kramer, Saba Molaei, Christian Rieck, Frederick Stock \& Tobias Wallner}
+          {The European Symposium on Algorithms (ESA)}
+          {2025}
+          {%
+%
+%
+%
+          }
+          {2}
+ \vspace{-.5em}  
+      
+        \publication
           {Input-Sensitive Reconfiguration of Sliding Cubes}
           {
  Hugo Akitaya, Matias Korman \& Frederick Stock}
@@ -334,7 +364,7 @@
 %
 %
           }
-          {1}
+          {3}
  \vspace{-.5em}  
       
         \publication
@@ -348,7 +378,7 @@
 %
 %
           }
-          {2}
+          {4}
  \vspace{-.5em}  
       
         \publication
@@ -362,7 +392,7 @@
 %
 \quad\href{https://doi.org/10.48550/arXiv.2411.06584}{\doilabel}%
           }
-          {3}
+          {5}
  \vspace{-.5em}  
       
         \publication
@@ -376,7 +406,7 @@
 %
 \quad\href{https://doi.org/10.4230/LIPIcs.SAND.2025.17}{\doilabel}%
           }
-          {4}
+          {6}
  \vspace{-.5em}  
       
         \publication
@@ -390,13 +420,13 @@
 \quad\href{https://github.com/Modular-Robotics-Group/modular-robotics}{\codeicon}%
 \quad\href{https://doi.org/10.4230/LIPIcs.SoCG.2025.85}{\doilabel}%
           }
-          {5}
+          {7}
  \vspace{-.5em}  
       
         \publication
           {Navigation in dynamic graphs: How to defeat the Acme Graph Exploder}
           {
- Amanda Epping Redlich, William K Moses Jr. \& Frederick Stock}
+ Amanda Redlich, William K. Moses Jr. \& Frederick Stock}
           {2025 Spring Eastern Sectional Meeting of the American Mathematical Society (AMS Spring 2025)}
           {2025}
           {%
@@ -404,7 +434,7 @@
 %
 %
           }
-          {6}
+          {8}
  \vspace{-.5em}  
       
         \publication
@@ -418,7 +448,7 @@
 %
 \quad\href{https://doi.org/10.4230/LIPIcs.ISAAC.2024.4}{\doilabel}%
           }
-          {7}
+          {9}
  \vspace{-.5em}  
       
         \publication
@@ -432,13 +462,13 @@
 %
 \quad\href{https://doi.org/10.4230/LIPIcs.ISAAC.2024.51}{\doilabel}%
           }
-          {8}
+          {10}
  \vspace{-.5em}  
       
         \publication
           {Agent Motion Planning as Block Asynchronous Cellular Automata: Pushing, Pulling, Suplexing, and More}
           {
- MIT Hardness Group, Hayashi Ani, Josh Brunner, Erik Demaine, Jenny Diomidova, Timothy Gomez, Della Hendrickson, Yael Kirkpatrick, Jeffery Li, Jayson Lynch, Ritam Nag \& Frederick Stock}
+ MIT Hardness Group, Hayashi Layers, Josh Brunner, Erik Demaine, Jenny Diomidova, Timothy Gomez, Della Hendrickson, Yael Kirkpatrick, Jeffery Li, Jayson Lynch, Ritam Nag \& Frederick Stock}
           {21st International Conference on Unconventional Computation and Natural Computation (UCNC)}
           {2024}
           {%
@@ -446,7 +476,7 @@
 %
 \quad\href{https://doi.org/10.1007/978-3-031-63742-1_16}{\doilabel}%
           }
-          {9}
+          {11}
  \vspace{-.5em}  
       
         \publication
@@ -460,7 +490,7 @@
 %
 \quad\href{https://doi.org/10.4230/LIPIcs.SoCG.2024.1}{\doilabel}%
           }
-          {10}
+          {12}
  \vspace{-.5em}  
       
         \publication
@@ -474,7 +504,7 @@
 %
 \quad\href{https://doi.org/10.48550/arXiv.2408.04687}{\doilabel}%
           }
-          {11}
+          {13}
  \vspace{-.5em}  
       
         \publication
@@ -488,13 +518,13 @@
 %
 %
           }
-          {12}
+          {14}
  \vspace{-.5em}  
       
         \publication
           {Blockchain Ensured Physical Visitor Access Control and Authentication}
           {
- Frederick Stock, Jarel Hearst \& Yessem Kurt Peker}
+ Frederick Stock, Jarel Hearst \& Yesem Kurt Peker}
           {IEEE International Conference on Mobile Ad Hoc and Smart Systems, REUNS (IEEE MASS REUNS)}
           {2022}
           {%
@@ -502,7 +532,7 @@
 %
 %
           }
-          {13}
+          {15}
  
     \setcounter{pubnum}{\value{enumi}}
     \end{enumerate}
@@ -572,6 +602,11 @@
     \end{enumerate}
     % \resumeSubHeadingListEnd
 
+%-----------COLLABORATORS--------------
+\subsection*{Collaborators}
+In the above have 53 collaborators:
+Zachary Abel, Hugo Akitaya, Reymond Akpanya, Hayashi Ani, Ahmad Biniaz, Josh Brunner, Andrew Clements, Justin Dallant, Erik Demaine, Jenny Diomidova, Kyle Dituro, Sam Downey, Jonathan Eisenbies, Sándor Fekete, Timothy Gomez, Andrei Gonczi, Jarel Hearst, Markus Hecher, Della Hendrickson, Adam Hesterberg, Thomas C. Hull, William K. Moses Jr., Michael Kaufmann, Yael Kirkpatrick, Linda Kleist, Scott Duke Kominers, Matias Korman, Peter Kramer, Hayashi Layers, Jeffery Li, Anna Lubiw, Jayson Lynch, Saba Molaei, Klara Mundilova, Ritam Nag, Chie Nara, Joseph O'Rourke, Yesem Kurt Peker, Alfredo J. Perez, Amanda Redlich, Christian Rieck, Bastien Rivier, Adi Rivkin, Soham Samanta, Gabriel Shahrouzi, Diane Souvaine, Josef Tkadlec, Andy Tockman, Csaba D. Tóth, Torsten Ueckerdt, Ryuhei Uehara, Tobias Wallner, Zixiang Zhou
+
 %-----------PRESENTATIONS---------------
 \section{Presentations}
 % \resumeSubHeadingListStart
@@ -621,6 +656,26 @@
   %   {Easier Ways to Prove Counting Hard: A Dichotomy for Generalized \#SAT, Applied to Constraint Graphs}
   %   {2024}
   %   {35th International Symposium on Algorithms and Computation (ISAAC)}
+  %   {%
+  %     \href{fred-stock.github.io/docstore/talks/slides.pdf}{\pdficon}%
+  %     %
+  %   }
+  %   {}
+  \presentation{Input-Sensitive Reconfiguration of Sliding Cubes}{The Fall Workshop on Computational Geometry}{2024} \vspace{-.5em}  
+  % \resumeSubheading
+  %   {Input-Sensitive Reconfiguration of Sliding Cubes}
+  %   {2024}
+  %   {The Fall Workshop on Computational Geometry (FWCG)}
+  %   {%
+  %     \href{fred-stock.github.io/docstore/talks/slides.pdf}{\pdficon}%
+  %     %
+  %   }
+  %   {}
+  \presentation{On Inside-out Dissections of Polygons and Polyhedra}{The Fall Workshop on Computational Geometry}{2024} \vspace{-.5em}  
+  % \resumeSubheading
+  %   {On Inside-out Dissections of Polygons and Polyhedra}
+  %   {2024}
+  %   {The Fall Workshop on Computational Geometry (FWCG)}
   %   {%
   %     \href{fred-stock.github.io/docstore/talks/slides.pdf}{\pdficon}%
   %     %
