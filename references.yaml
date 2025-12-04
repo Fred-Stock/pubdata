@@ -1,0 +1,25 @@
+# - writer: ""
+#   email: ""
+#   position: ""
+#   affiliation: ""
+
+- writer: "Hugo Akitaya"
+  email: "hugo\\_akitaya@uml.edu"
+  position: "Assistant Professor"
+  affiliation: "University of Massachusetts Lowell"
+
+- writer: "Joseph O'Rourke"
+  email: "jorourke@smith.edu"
+  position: "Professor (Emeritus)"
+  affiliation: "Smith College"
+
+- writer: "Amanda Redlich"
+  email: "Amanda\\_Redlich@uml.edu"
+  position: "Assistant Professor"
+  affiliation: "University of Massachusetts Lowell"
+
+- writer: "Csaba Tóth"
+  email: "csaba.toth@csun.edu"
+  position: "Professor"
+  affiliation: "CSUN Northridge \\& Tufts University"
+

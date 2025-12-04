@@ -17,18 +17,19 @@ if __name__ == '__main__':
         'email': 'frederick\\_stock@student.uml.edu',
         'phone': '+1-860-759-5072',
         'website': 'fred-stock.github.io',
-        'scholar': 'https://scholar.google.com/citations?user=VzJruXwAAAAJ'
+        'scholar': 'https://dblp.org/pid/337/0621.html'
     }
 
     data = {
-        'personal' : personal,
-        'accolades': load_yaml('accolades.yaml'),
-        'education': load_yaml('education.yaml'),
-        'positions': load_yaml('positions.yaml'),
-        'pubs'     : load_yaml('pubs.yaml'),
-        'service'  : load_yaml('service.yaml'),
-        'talks'    : load_yaml('talks.yaml'),
-        'collabs'  : load_yaml('collab_data.yaml')
+        'personal'   : personal,
+        'accolades'  : load_yaml('accolades.yaml'),
+        'education'  : load_yaml('education.yaml'),
+        'positions'  : load_yaml('positions.yaml'),
+        'pubs'       : load_yaml('pubs.yaml'),
+        'service'    : load_yaml('service.yaml'),
+        'talks'      : load_yaml('talks.yaml'),
+        'collabs'    : load_yaml('collab_data.yaml'),
+        'references' : load_yaml('references.yaml'),
     }
 
     # normalize docstore links

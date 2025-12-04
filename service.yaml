@@ -55,7 +55,7 @@
 
 - service_type: "reviewer"
   year: 
-    - 2025 x2
+    - 2025 
   venue_type: "journal"
   venue: "Journal on Computational Geometry"
   venue_short: "JoCG"

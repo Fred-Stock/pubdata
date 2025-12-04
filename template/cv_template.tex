@@ -192,6 +192,16 @@
 <% endfor %>
 \resumeSubHeadingListEnd
 
+%-----------REFERENCES--------------
+\section{References}
+\resumeSubHeadingListStart
+
+<% for r in references:%>
+\resumeSubheading{<< r.writer >>}{<< r.position >>}{<< r.email >>}{<< r.affiliation >>}    
+<% endfor %>
+
+\resumeSubHeadingListEnd
+
 %-----------SERVICE-----------------
 \section{Service}
 \resumeSubHeadingListStart
@@ -301,15 +311,7 @@ In the above have <<collabs[0].total>> collaborators:
 \resumeSubHeadingListEnd
 
 
-%-----------REFERENCES--------------
-\section{References}
-\resumeSubHeadingListStart
 
-<% for r in references:%>
-\resumeSubheading{<< r.writer >>}{<< r.position >>}{<< r.email >>}{<< r.affiliation >>}    
-<% endfor %>
-
-\resumeSubHeadingListEnd
 
 \end{document}
 
