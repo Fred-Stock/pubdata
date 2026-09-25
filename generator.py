@@ -105,7 +105,7 @@ def generate_pub_html(pub):
         #venue_span = ""
         venue_span = f"<span class=\"pub-venue\">{pub['publication_year']}</span>"
     if "comment" in pub.keys():
-        comment_span = f"<span class=\"pub-comment\">{pub["comment"]}</span>"
+        comment_span = f"<span class=\"pub-comment\">{pub['comment']}</span>"
     else:
         comment_span = ""
 
