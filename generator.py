@@ -32,12 +32,10 @@ self_site_title = "Freddy Stock"
 self_author_modified = "Freddy <img src=\"croppedpfp.png\" style=\"width:75px;height:auto;border-radius:50%;float:right;\">"
 
 # Personal information for the header
-email = "frederick_stock [at] student.uml.edu "
-subtitle = "Ph.D. Student in Computational Geometry"
-bio = ("I am a Ph.D. student at the University of Massachussetts Lowell, in Lowell Mass. I have an expected graduation date of May 2026. "
-        "My interests lie in Algorithms and Computational geometry, with a focus on Reconfiguration algorithms. "
-        "<b>I am actively soliciting job offers for after my graduation.</b> "
-        "Open to significant relocation. ")
+email = "frederickstock0 [at] gmail.com "
+subtitle = "Postdoc at TU Dresden"
+bio = ("I am a postdoctoral researcher at TU Dresden in the Chair of Structural and Algorithmic Graph Theory, working with Daniel Neuen. "
+        "My interests lie in Algorithms and Computational geometry, with a focus on Reconfiguration algorithms and a developing interest in Graph Theory.")
 
 # Define the order of venue types
 venue_order = ["upcoming", "journal",  "conference", "other", "preprint",  "thesis", "workshop", "software"]

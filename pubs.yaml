@@ -2,25 +2,6 @@
 
 ##################################################### Upcoming #############################################################
 
-- title: "Redistricting in Triangular and Square Grids"
-  short_title: "Redistricting"
-  authors:
-    - Hugo Akitaya
-    - Kyle Dituro
-    - Andrei Gonczi 
-    - Matias Korman
-    - Diane Souvaine
-    - Frederick Stock
-    - Csaba D. Tóth
-  publication_year: "2026"
-  venue_type: "upcoming"
-  venue: "Symposium on Simplicity in Algorithms"
-  venue_short: "SOSA"
-  code_link: null
-  pdf_link: null
-  web_link: null
-  doi: null
-
 - title: "Super Guarding and Dark Rays in Art Galleries"
   short_title: "Super Guarding and Dark Rays"
   authors:
@@ -49,14 +30,14 @@
     - Scott Duke Kominers
     - Matias Korman 
     - Frederick Stock
-  publication_year: "TBA"
-  venue_type: "upcoming"
+  publication_year: 2025
+  venue_type: "journal"
   venue: "The Journal of Computational Geometry"
   venue_short: "JoCG"
   code_link: null
-  pdf_link: null
-  web_link: null
-  doi: null
+  pdf_link: "https://jocg.org/index.php/jocg/article/view/5625/4061"
+  web_link: "https://jocg.org/index.php/jocg/article/view/5625"
+  doi: "10.20382/jocg.v16i2a11"
 
 - title: "Agent Motion Planning as Block Asynchronous Cellular Automata: Pushing, Pulling, Suplexing, and More"
   short_title: "Block Pushing as Asynchronous Cellular Automata"
@@ -81,6 +62,146 @@
   pdf_link: "docstore:Push-Pull-NACO.pdf"
   web_link: "https://link.springer.com/collections/dhhcbcghgd"
   doi: null
+
+####################################################### 2026 ###############################################################
+
+- title: "The Chromatic Dispersive Art Gallery Problem in Polyominoes"
+  short_title: "Chromatic Dispersive Art Gallery in Polyominoes"
+  authors:
+    - Anna Brötzner
+    - Kien C. Huynh
+    - Christiane Schmidt
+    - Frederick Stock
+  publication_year: 2026
+  venue_type: "conference"
+  venue: "The Canadian Conference on Computational Geometry"
+  venue_short: "CCCG"
+  code_link: null
+  pdf_link: null
+  web_link: null
+  doi: null
+
+- title: "Optimizing Solutions to the Fold and Punch Problem"
+  short_title: "Fold and Punch Problem"
+  authors:
+    - MIT Folding Group
+    - Hugo Akitaya
+    - Josh Brunner
+    - Erik Demaine
+    - Jayson Lynch
+    - Saskia Solotko
+    - Frederick Stock
+  publication_year: 2026
+  venue_type: "conference"
+  venue: "The Canadian Conference on Computational Geometry"
+  venue_short: "CCCG"
+  code_link: null
+  pdf_link: null
+  web_link: null
+  doi: null
+
+- title: "Sliding Cubes in Parallel (Media Exposition)"
+  short_title: "Sliding Cubes in Parallel (Media Exposition)"
+  authors:
+    - Hugo Akitaya
+    - Joseph Dorfer
+    - Peter Kramer
+    - Christian Rieck
+    - Soham Samanta
+    - Gabriel Shahrouzi
+    - Frederick Stock
+  publication_year: 2026
+  venue_type: "conference"
+  venue: "42nd International Symposium on Computational Geometry Media Exposition"
+  venue_short: "SoCG:ME 2026"
+  code_link: null
+  pdf_link: "https://drops.dagstuhl.de/storage/00lipics/lipics-vol367-socg2026/LIPIcs.SoCG.2026.96/LIPIcs.SoCG.2026.96.pdf"
+  web_link: "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SoCG.2026.96"
+  doi: "10.4230/LIPIcs.SoCG.2026.96"
+
+- title: "\"Visualizing\" the CG Community (Media Exposition)"
+  short_title: "Visualizing the CG Community (Media Exposition)"
+  authors:
+    - Oswin Aichholzer
+    - Hugo Akitaya
+    - Anna Brötzner
+    - Peter Kramer
+    - Christian Rieck
+    - Frederick Stock
+  publication_year: 2026
+  venue_type: "conference"
+  venue: "42nd International Symposium on Computational Geometry Media Exposition"
+  venue_short: "SoCG:ME 2026"
+  code_link: null
+  pdf_link: "https://drops.dagstuhl.de/storage/00lipics/lipics-vol367-socg2026/LIPIcs.SoCG.2026.97/LIPIcs.SoCG.2026.97.pdf"
+  web_link: "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SoCG.2026.97"
+  doi: "10.4230/LIPIcs.SoCG.2026.97"
+
+- title: "Sliding Cubes in Parallel"
+  short_title: "Sliding Cubes in Parallel"
+  authors:
+    - Hugo Akitaya
+    - Joseph Dorfer
+    - Peter Kramer
+    - Christian Rieck
+    - Gabriel Shahrouzi
+    - Frederick Stock
+  publication_year: 2026
+  venue_type: "conference"
+  venue: "The European Symposium on Algorithms"
+  venue_short: "ESA"
+  code_link: null
+  pdf_link: "https://drops.dagstuhl.de/storage/00lipics/lipics-vol388-esa2026/LIPIcs.ESA.2026.26/LIPIcs.ESA.2026.26.pdf"
+  web_link: "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ESA.2026.26"
+  doi: "10.4230/LIPIcs.ESA.2026.26"
+
+- title: "Redistricting in Triangular and Square Grids"
+  short_title: "Redistricting"
+  authors:
+    - Hugo Akitaya
+    - Kyle Dituro
+    - Andrei Gonczi
+    - Matias Korman
+    - Diane Souvaine
+    - Frederick Stock
+    - Csaba D. Tóth
+  publication_year: 2026
+  venue_type: "conference"
+  venue: "Symposium on Simplicity in Algorithms"
+  venue_short: "SOSA"
+  code_link: null
+  pdf_link: null
+  web_link: "https://doi.org/10.1137/1.9781611978964.2"
+  doi: "10.1137/1.9781611978964.2"
+
+- title: "Open Problems from CCCG 2026"
+  short_title: "CCCG Open Problems 2026"
+  authors:
+    - Hugo Akitaya
+    - Frederick Stock
+  publication_year: 2026
+  venue_type: "other"
+  venue: "The Canadian Conference on Computational Geoemtry"
+  venue_short: CCCG
+  code_link: null
+  pdf_link: "docstore:"
+  web_link: null
+  doi: null
+
+- title: "Broadcasting Agents and Adversary: A new variation on Cops and Robbers"
+  short_title: "Broadcasting Agents and Adversary"
+  authors:
+    - William K. Moses Jr.
+    - Amanda Redlich
+    - Frederick Stock
+  publication_year: 2026
+  venue_type: "preprint"
+  venue: "arXiv"
+  venue_short: "arXiv"
+  code_link: null
+  pdf_link: "https://arxiv.org/pdf/2603.11958"
+  web_link: "https://arxiv.org/abs/2603.11958"
+  doi: "10.48550/arXiv.2603.11958"
 
 ####################################################### 2025 ###############################################################
 
@@ -226,6 +347,21 @@
   pdf_link: "docstore:Broadcast_via_Mobile_Agents_in_a_Dynamic_Network-sand.pdf"
   web_link: "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SAND.2025.17"
   doi: "10.4230/LIPIcs.SAND.2025.17"
+
+- title: "Broadcast via Mobile Agents in a Dynamic Network: Interplay of Graph Properties \\& Agents"
+  short_title: "Broadcast via Mobile Agents in Dynamic Network (Full Version)"
+  authors:
+    - William K. Moses Jr.
+    - Amanda Redlich
+    - Frederick Stock
+  publication_year: 2025
+  venue_type: "preprint"
+  venue: "arXiv"
+  venue_short: "arXiv"
+  code_link: null
+  pdf_link: "https://arxiv.org/pdf/2504.05442"
+  web_link: "https://arxiv.org/abs/2504.05442"
+  doi: "10.48550/arXiv.2504.05442"
 
 - title: "Finding Shortest Reconfiguration Sequences for Modular Robots"
   short_title: "Shortest Reconfiguration Sequences for Modular Robots"

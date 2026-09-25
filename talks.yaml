@@ -10,6 +10,22 @@
 #FWCG 2024
 
 
+- title: "The Chromatic Dispersive Art Gallery Problem in Polyominoes"
+  short_title: "Chromatic Dispersive Art Gallery in Polyominoes"
+  slides_link: "docstore:talks/slides.pdf"
+  venue_type: "conference"
+  venue: "The Canadian Conference on Computational Geometry"
+  venue_short: "CCCG"
+  year: 2026
+
+- title: "Optimizing Solutions to the Fold and Punch Problem"
+  short_title: "Fold and Punch Problem"
+  slides_link: "docstore:talks/slides.pdf"
+  venue_type: "conference"
+  venue: "The Canadian Conference on Computational Geometry"
+  venue_short: "CCCG"
+  year: 2026
+
 - title: "Input-Sensitive Reconfiguration of Sliding Cubes"
   short_title: "Input-Sensitive Sliding Cubes"
   slides_link: "docstore:talks/slides.pdf"

@@ -1,8 +1,16 @@
 #Reviews
 # CCCG Open Problems Session
 # FWCG Tech Support
+- service_type: "Program Committee"
+  year: 
+    - 2026
+  venue_type: "conference"
+  venue: "European Workshop on Computational Geometry"
+  venue_short: "EuroCG"
+
 - service_type: "Open Problem Transcription"
   year:
+    - 2026
     - 2025
     - 2024
   venue_type: "conference"
@@ -23,6 +31,13 @@
   venue_short: "FWCG"
 
 ########################### Reviews
+
+- service_type: "reviewer"
+  year: 
+    - 2026
+  venue_type: "journal"
+  venue: "Thoeretical Computer Science"
+  venue_short: "TCS"
 
 - service_type: "reviewer"
   year: 
@@ -69,6 +84,7 @@
 
 - service_type: "reviewer"
   year: 
+    - 2026
     - 2024
   venue_type: "conference"
   venue: "The Canadian Conference on Computational Geoemtry"

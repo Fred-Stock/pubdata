@@ -1,7 +1,15 @@
+- organization: "TU Dresden"
+  job_title: "Postdoctoral Researcher"
+  start: "Summer 2026"
+  end: "Current"
+  comments: [
+    "Postdoctoral researcher in the Chair of Structural and Algorithmic Graph Theory"
+  ]
+
 - organization: "University of Massachusetts Lowell"
   job_title: "Research Assistant"
   start: "Fall 2024"
-  end: "Current"
+  end: "Spring 2026"
   comments: [
     "Conducting research on reconfiguration of modular robots under Hugo Akitaya, funded by NSF grant CCF-2348067."
   ]
